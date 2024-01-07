@@ -1,0 +1,56 @@
+/*
+  Buttons
+*/
+
+.btn {
+  display: inline-block;
+  height: 36px;
+  padding: 0 16px 0 16px;
+  text-decoration: none;
+  line-height: 34px;
+  position: relative;
+
+  .btn-icon {
+    display: inline-block;
+    height: 34px;
+    vertical-align: middle;
+    background-position: center;
+  }
+
+  &--filled {
+    background-color: $color-brand;
+    transition: background-color .15s, padding .15s;
+    color: white;
+
+    &:after {
+      content: "\00BB";
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 0px;
+      transition: right .2s;
+      font-size: 22px;
+      line-height: 30px;
+      opacity: 0;
+      transition: opacity .1s .0s;
+    }
+
+    &:hover {
+      background-color: darken($color-brand, 7%);
+      padding-right: 40px;
+
+      &:after {
+        opacity: 1;
+        transition: opacity .15s .05s;
+      }
+    }
+  }
+  &--rounded {
+    border-radius: 18px;
+  }
+  &--icon-left {
+    .btn-icon {
+      margin-right: 8px;
+    }
+  }
+}

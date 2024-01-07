@@ -1,0 +1,48 @@
+
+
+.archive-previews {
+  margin-bottom: v.$spacing-unit * 4;
+}
+
+.archive-previews-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.archive-preview {
+  margin-right: 5%;
+  flex: none;
+
+  @include breakpoint-small {
+    width: 95%;
+    margin-bottom: v.$spacing-unit * 2;
+  }
+
+  @include breakpoint-medium {
+    width: 45%;
+    margin-bottom: v.$spacing-unit * 4;
+  }
+
+  @include breakpoint-large {
+    width: 28%;
+    margin-bottom: v.$spacing-unit * 4;
+  }
+
+  &__item {
+
+  }
+
+  &__headline {
+    color: $color-brand;
+    font-family: $heading-font-family;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1.2;
+
+    > a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}

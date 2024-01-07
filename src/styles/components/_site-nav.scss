@@ -1,0 +1,128 @@
+/*
+  Site navigation elements
+*/
+
+.site-nav-button,
+.site-nav-close {
+  display: block;
+  margin-top: 15px;
+  height: 50px;
+  width: 100px;
+  border: none;
+  background: transparent;
+  user-select: none;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1000;
+  right: 15px;
+  top: 0;
+  font-size: 15px;
+  text-align: right;
+  line-height: 48px;
+  color: $color-brand;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-family: $heading-font-family;
+  font-weight: bold;
+
+  .label-toggled {
+    display: none;
+  }
+
+  .label-default {
+    display: block;
+  }
+
+  &.is-toggled {
+    color: $color-brand;
+
+    .label-toggled {
+      display: block;
+    }
+    .label-default {
+      display: none;
+    }
+  }
+}
+
+
+.site-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-color: rgba(255,253,248,1);
+  overflow: hidden;
+
+  &.is-toggled {
+    overflow: visible;
+    height: 100vh;
+    width: 100vw;
+    opacity: 1;
+    z-index: 1000;
+    transition: height .25s, background-color .25s, opacity .25s, padding .25s;
+  }
+
+  &__wrap {
+    padding-top: 20px;
+  }
+
+  &__logo {
+    height: 40px;
+    width: 40px;
+    margin-bottom: v.$spacing-unit * 4;
+
+    @include max(359px) {
+      margin: 0 auto;
+    }
+
+    > img {
+       max-width: 100%;
+       height: auto;
+    }
+  }
+
+  &__item,
+  &__homelink {
+    display: block;
+    text-align: left;
+    padding: 25px 0;
+    font-family: $heading-font-family;
+    font-weight: bold;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    color: $color-brand;
+    text-align: center;
+  }
+
+  &__item:after{
+    content: '';
+    border-bottom: 1px solid rgba($color-brand,1);
+    width: 20px;
+    display: block;
+    height: 1px;
+    position: relative;
+    left: calc(50% - 10px);
+    top: 19px;
+  }
+
+  &__homelink {
+    margin-top: 20px;
+    padding-left: 18px;
+
+    &:before {
+      content: "\00AB";
+      display: inline-block;
+      position: relative;
+      left: -5px;
+      top: 0;
+      transition: right .2s;
+      font-size: 22px;
+      line-height: 18px;
+    }
+  }
+}

@@ -1,0 +1,185 @@
+/*
+  The CSS in this style tag is based off of Bear Blog's default CSS.
+  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
+  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
+ */
+
+@use './config/variables'as v;
+
+// Our variables
+$base-font-family: "Noticia Text",
+"Helvetica Neue",
+Arial,
+sans-serif;
+$heading-font-family: "Helvetica Neue",
+Arial,
+sans-serif;
+
+$base-font-size: 1rem;
+
+// Colors
+$color-text: #415252;
+$color-body-background: #FFFDF8;
+/* light beige */
+$color-brand: #007F7F;
+$color-brand: #007F7F;
+
+$grey-color: #828282;
+$color-grey-light: #B3B8B5;
+$color-grey-lightest: #fcfcfc;
+$grey-color-dark: darken($grey-color, 25%);
+
+
+:root {
+    --brand: #007F7F;
+    --accent: #007F7F;
+    --accent-dark: #007F7F;
+    --black: 15, 18, 25;
+    --gray: 96, 115, 159;
+    --gray-light: 229, 233, 240;
+    --gray-dark: 34, 41, 57;
+    --gray-gradient: rgba(var(--grawy-light), 50%), #fff;
+    --box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
+        0 16px 32px rgba(var(--gray), 33%);
+}
+
+
+@font-face {
+    font-family: "Noticia Text";
+    src: local("Noticia Text"),
+        url("/public/fonts/NoticiaText-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noticia Text";
+    src: local("Noticia Text"),
+        url("/public/fonts/NoticiaText-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Noticia Text";
+    src: local("Noticia Text"),
+        url("/public/fonts/NoticiaText-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Noticia Text";
+    src: local("Noticia Text"),
+        url("/public/fonts/NoticiaText-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: $base-font-family;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background-size: 100% 600px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: rgb(var(--gray-dark));
+    line-height: 1.6;
+    font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 0.5rem 0;
+    color: rgb(var(--black));
+    line-height: 1.2;
+}
+
+
+strong,
+b {
+    font-weight: 700;
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--accent);
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.prose p {
+    margin-bottom: 2em;
+}
+
+textarea {
+    width: 100%;
+    font-size: 16px;
+}
+
+input {
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+}
+
+code {
+    padding: 2px 5px;
+    background-color: rgb(var(--gray-light));
+    border-radius: 2px;
+}
+
+pre {
+    padding: 1.5em;
+    border-radius: 8px;
+}
+
+pre>code {
+    all: unset;
+}
+
+blockquote {
+    border-left: 4px solid var(--accent);
+    padding: 0 0 0 20px;
+    margin: 0px;
+    font-size: 1.333em;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(var(--gray-light));
+}
+
+@import "utilities/widths";
+@import "utilities/utilities";
+@import "base/normalize";
+
+@import "components/layout";
+@import "components/buttons";
+@import "components/icons";
+
+@import "components/posts";
+@import "components/site-header-other";
+@import "components/site-footer";
+@import "components/site-nav";
+@import "components/archive-preview";
+@import "components/divider";
+@import "components/featured-post";
+@import "components/sharebox";

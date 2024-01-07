@@ -1,0 +1,54 @@
+/*
+  Base
+*/
+
+
+html {
+  height: 100%;
+}
+
+body {
+  color: $color-text;
+  line-height: $base-line-height;
+  font-size: 18px;
+  font-feature-settings: "kern"1;
+  font-kerning: normal;
+  background-color: $color-body-background;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+ul,
+ol {
+  margin-left: v.$spacing-unit;
+}
+
+
+li {
+
+  >ul,
+  >ol {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.container {
+  padding: 0 (v.$spacing-unit * 2);
+  position: relative;
+
+  @media #{$breakpoint-not-small} {
+    margin: 0 auto;
+  }
+
+  @media #{$breakpoint-medium} {
+    width: 85%;
+  }
+
+  @media #{$breakpoint-large} {
+    width: 75%;
+  }
+}

@@ -1,0 +1,40 @@
+// Our variables
+$base-font-family: "Noticia Text",
+"Helvetica Neue",
+Arial,
+sans-serif;
+$heading-font-family: "Helvetica Neue",
+Arial,
+sans-serif;
+
+$base-font-size: 18px;
+$base-font-weight: 400;
+$base-line-height: 1.6;
+
+// 4px scale a la android
+$spacing-unit: 0.4rem;
+
+// Colors
+$color-text: #415252;
+$color-body-background: #FFFDF8;
+/* light beige */
+$color-brand: #007F7F;
+
+$grey-color: #828282;
+$color-grey-light: #B3B8B5;
+$color-grey-lightest: #fcfcfc;
+$grey-color-dark: darken($grey-color, 25%);
+
+
+// Width of the content area
+$on-palm: 30em !default;
+$on-laptop: 60em !default;
+
+
+$breakpoint-small: 'screen and (max-width: 30em)' !default;
+$breakpoint-not-small: 'screen and (min-width: 30em)' !default;
+
+$breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)' !default;
+
+$breakpoint-large: "screen and (min-width: 60em)" !default;
+$breakpoint-not-large: "screen and (max-width: 60em)" !default;

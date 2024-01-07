@@ -1,0 +1,55 @@
+/**
+ * Site footer
+ */
+
+
+.site-footer {
+  background: transparent url('/public/bitmap/bg_bottom.png') repeat-x top center;
+  background-size: 720px auto;
+  padding-top: v.$spacing-unit;
+  padding-bottom: (v.$spacing-unit * 3);
+  margin-top: auto;
+}
+
+
+.site-logo-footer {
+  width: 42px;
+
+  >img {
+    max-width: 100%;
+  }
+}
+
+.colophon {
+
+  &__wrap {
+    text-align: center;
+
+    .dash {
+      display: inline-block;
+      padding: 0 14px;
+      color: #7D8A8A;
+
+      @include max(v.$on-palm) {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    color: $color-brand;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: $heading-font-family;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  &__link {
+    @include max(v.$on-palm) {
+      display: block;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+}
