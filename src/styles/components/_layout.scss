@@ -46,7 +46,7 @@
   letter-spacing: .15em;
   text-transform: uppercase;
   text-decoration: none;
-  color: $color-brand;
+  color: v.$color-brand;
   font-size: 12px;
 }
 
@@ -123,18 +123,6 @@
 
 
 .post-link {
-  color: $color-brand;
+  color: v.$color-brand;
   text-decoration: none;
-}
-
-body.layout-home,
-body.layout-page {
-  background: $color-body-background url('/bitmap/bg_top_index.png') repeat-x top center;
-  background-size: 720px auto;
-}
-
-body.layout-post {
-  background: $color-body-background url('/bitmap/bg_top_other.png') repeat-x top center;
-  background-size: 720px auto;
-  margin-bottom: v.$spacing-unit * 3;
 }

@@ -2,53 +2,43 @@
   Base
 */
 
+@use '../config/variables'as v;
+
 
 html {
-  height: 100%;
+  font-size: 62.5%;
 }
 
 body {
-  color: $color-text;
-  line-height: $base-line-height;
-  font-size: 18px;
-  font-feature-settings: "kern"1;
+  color: v.$color-text;
+  line-height: v.$base-line-height;
+  font-size: 1.8rem;
+  font-feature-settings: "kern" 1;
   font-kerning: normal;
-  background-color: $color-body-background;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
+  background-color: v.$color-body-background;
 
+  &.layout-home,
+  &.layout-page {
+    background: v.$color-body-background url('/bitmap/bg_top_index.png') repeat-x top center;
+    background-size: 720px auto;
+  }
+
+  &.layout-post {
+    background: v.$color-body-background url('/bitmap/bg_top_other.png') repeat-x top center;
+    background-size: 720px auto;
+    margin-bottom: v.$spacing-unit * 3;
+  }
+}
 
 ul,
 ol {
   margin-left: v.$spacing-unit;
 }
 
-
 li {
 
   >ul,
   >ol {
     margin-bottom: 0;
-  }
-}
-
-
-
-.container {
-  padding: 0 (v.$spacing-unit * 2);
-  position: relative;
-
-  @media #{$breakpoint-not-small} {
-    margin: 0 auto;
-  }
-
-  @media #{$breakpoint-medium} {
-    width: 85%;
-  }
-
-  @media #{$breakpoint-large} {
-    width: 75%;
   }
 }

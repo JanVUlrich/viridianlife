@@ -23,7 +23,8 @@ const allPosts = await Astro.glob<Frontmatter>("../pages/posts/*.md");
         </div>
 
         <h1 class="site-title">{SITE_TITLE}</h1>
-        <div>
+        
+        <div class="site-subtitle">
           Civilization probably was a bad idea. How do we make the best of it?
         </div>
       </div>
@@ -134,8 +135,7 @@ const allPosts = await Astro.glob<Frontmatter>("../pages/posts/*.md");
     font-family: v.$base-font-family;
     color: v.$color-brand;
     text-decoration: none;
-    text-transform: capitalize;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0;
     line-height: 1.1;
@@ -145,11 +145,11 @@ const allPosts = await Astro.glob<Frontmatter>("../pages/posts/*.md");
     text-align: center;
     color: v.$color-brand;
     font-family: v.$heading-font-family;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
 
     @media (min-width: 360px) {
-      font-size: 20px;
+      font-size: 1.2rem;
       text-align: center;
     }
   }

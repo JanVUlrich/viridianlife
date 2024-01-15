@@ -1,4 +1,4 @@
-
+@use '../config/variables'as v;
 
 .featured-preview {
   margin-bottom: v.$spacing-unit * 6;
@@ -53,7 +53,7 @@
   }
 
   &__excerpt {
-    font-family: $base-font-family;
+    font-family: v.$base-font-family;
 
     @include breakpoint-large {
       margin-bottom: auto;

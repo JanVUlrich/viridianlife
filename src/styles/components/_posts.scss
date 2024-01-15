@@ -1,10 +1,12 @@
+@use '../config/variables'as v;
+
 /**
  * Posts
  */
 
 .post,
 .page {
-  font-family: $base-font-family;
+  font-family: v.$base-font-family;
   margin-bottom: 2rem;
 
   @media (min-width: 768px) {
@@ -36,11 +38,11 @@
   letter-spacing: -1px;
   line-height: 1.2;
   margin-bottom: v.$spacing-unit * 2;
-  color: $color-brand;
+  color: v.$color-brand;
   text-decoration: none;
   font-weight: bold;
   text-align: left;
-  font-family: $heading-font-family;
+  font-family: v.$heading-font-family;
 
   @include breakpoint-medium {
     font-size: 36px;
@@ -52,7 +54,7 @@
 }
 
 .post-continue-link {
-  font-family: $base-font-family;
+  font-family: v.$base-font-family;
   display: inline-block;
   padding-right: 22px;
   position: relative;
@@ -70,11 +72,11 @@
   }
 
   &:link {
-    color: $color-brand;
+    color: v.$color-brand;
   }
 
   &:visited {
-    color: $color-brand;
+    color: v.$color-brand;
   }
 
   &:hover {
@@ -89,23 +91,23 @@
   flex: none;
   min-width: 120px;
   font-size: 18px;
-  font-family: $heading-font-family;
-  color: $grey-color;
+  font-family: v.$heading-font-family;
+  color: v.$grey-color;
   font-weight: 600;
   margin-right: 20px;
   padding-top: 2px;
 }
 
 .post-meta {
-  font-family: $heading-font-family;
-  color: $grey-color;
+  font-family: v.$heading-font-family;
+  color: v.$grey-color;
   font-weight: 600;
   font-size: 18px;
 }
 
 .post-preview-headline {
-  color: $color-brand;
-  font-family: $heading-font-family;
+  color: v.$color-brand;
+  font-family: v.$heading-font-family;
   font-size: 32px;
   font-weight: bold;
   text-decoration: none;
@@ -137,8 +139,8 @@
     flex: none;
     width: 25%;
     min-width: 120px;
-    font-family: $heading-font-family;
-    color: $grey-color;
+    font-family: v.$heading-font-family;
+    color: v.$grey-color;
     font-weight: 600;
     margin-top: 2px;
 
@@ -157,7 +159,7 @@
   }
 
   &__excerpt {
-    font-family: $base-font-family;
+    font-family: v.$base-font-family;
     margin-bottom: 1rem;
   }
 }
@@ -203,7 +205,7 @@
 }
 
 .post-header-secondary {
-  border-top: 1px solid $color-grey-light;
+  border-top: 1px solid v.$color-grey-light;
   padding-top: 7px;
 
   @include max(v.$on-palm) {
@@ -224,7 +226,7 @@
 
     >a {
       text-decoration: none;
-      color: $color-brand;
+      color: v.$color-brand;
       line-height: 36px;
     }
   }
@@ -260,11 +262,11 @@
 }
 
 .post-headline {
-  color: $color-brand;
+  color: v.$color-brand;
   text-decoration: none;
   font-weight: bold;
   text-align: left;
-  font-family: $heading-font-family;
+  font-family: v.$heading-font-family;
   font-size: 22px;
   line-height: 1.2;
 }
@@ -279,9 +281,9 @@
 
   h2 {
     font-size: 24px;
-    color: $color-brand;
+    color: v.$color-brand;
     font-weight: bold;
-    font-family: $heading-font-family;
+    font-family: v.$heading-font-family;
     line-height: 1.25;
     margin-bottom: 1rem;
 
@@ -295,7 +297,7 @@
     text-transform: uppercase;
     letter-spacing: .15em;
     font-weight: bold;
-    font-family: $heading-font-family;
+    font-family: v.$heading-font-family;
     line-height: 1.25;
     margin-bottom: 1rem;
 
@@ -305,7 +307,7 @@
   }
 
   h4 {
-    color: $color-brand;
+    color: v.$color-brand;
     font-weight: bold;
   }
 
@@ -318,7 +320,7 @@
   }
 
   a {
-    color: $color-brand;
+    color: v.$color-brand;
   }
 }
 
@@ -333,9 +335,9 @@
   &__headline {
     text-align: center;
     font-size: 24px;
-    color: $color-brand;
+    color: v.$color-brand;
     font-weight: bold;
-    font-family: $heading-font-family;
+    font-family: v.$heading-font-family;
     margin-bottom: v.$spacing-unit * 2;
   }
 

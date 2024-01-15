@@ -1,3 +1,5 @@
+@use '../config/variables'as v;
+
 /*
   Buttons
 */
@@ -18,7 +20,7 @@
   }
 
   &--filled {
-    background-color: $color-brand;
+    background-color: v.$color-brand;
     transition: background-color .15s, padding .15s;
     color: white;
 
@@ -36,7 +38,7 @@
     }
 
     &:hover {
-      background-color: darken($color-brand, 7%);
+      background-color: darken(v.$color-brand, 7%);
       padding-right: 40px;
 
       &:after {

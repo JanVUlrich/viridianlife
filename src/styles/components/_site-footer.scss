@@ -1,3 +1,6 @@
+@use '../config/variables'as v;
+
+
 /**
  * Site footer
  */
@@ -37,10 +40,10 @@
   }
 
   &__title {
-    color: $color-brand;
+    color: v.$color-brand;
     text-decoration: none;
     font-weight: bold;
-    font-family: $heading-font-family;
+    font-family: v.$heading-font-family;
     font-size: 22px;
     margin-bottom: 10px;
   }
