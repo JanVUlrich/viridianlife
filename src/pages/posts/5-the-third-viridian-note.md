@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/Post.astro"
+layout: "../../layouts/PostLayout.astro"
 title: "The third viridian note: how this blog got its name"
 ---
 

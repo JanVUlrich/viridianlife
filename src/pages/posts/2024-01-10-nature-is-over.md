@@ -1,8 +1,9 @@
 ---
-layout: "../../layouts/Post.astro"
-title: Nature is over. 
+layout: "../../layouts/PostLayout.astro"
+title: Nature is over. long live nature! 
 summary: Nature is over
 ---
+
 
 * Mikro und Nanoplastik in Wasser: https://www.pnas.org/doi/10.1073/pnas.2300582121#
 

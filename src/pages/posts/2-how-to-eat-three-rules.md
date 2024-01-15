@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/Post.astro"
+layout: "../../layouts/PostLayout.astro"
 title: "How to eat in the modern world: an attempt at simplifying a needlessly complex topic"
 summary: Eating used to be easy, now it is subject to myriads of opposing influences. We provide an alternative set of guidelines that aim to cut through the chaos.
 --- 
@@ -80,7 +80,7 @@ Think twice whether you really need that rare piece of fruit that traveled halfw
 ## 3) Keep it sustainable
 
 #### Sustainable foods
-Go for organic whenever you can. Nutrients are not a concern here; It’s about not supporting the use of pesticides, herbicides and artificial fertilizers, all of whichcm with many severe negative side effects. Instead of going to the supermarket, find a farmers market or a local food coop to procure your staples from. Opt for foods that are produced within 100km of your residence, and if you can, try to befriend a producer / farmer from your region and see where this might lead you. 
+Go for organic whenever you can. Nutrients are not a concern here; It’s about not supporting the use of pesticides, herbicides and artificial fertilizers, all of which will disrupt, damage and diminish biodiversity. Instead of going to the supermarket, find a farmers market or a local food coop to procure your staples from. Opt for foods that are produced within 100km of your residence, and if you can, try to befriend a producer / farmer from your region and see where this might lead you. 
 
 #### Sustainable habits
 Know yourself and your habits and how they might get in your way. Then optimize for ease and simplicity: apply the pareto principle whenever you can. 

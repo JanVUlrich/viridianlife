@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/Post.astro"
+layout: "../../layouts/PostLayout.astro"
 title: "Inaugural post: A viridian perspective"
 pubDate: 2021-01-10
 author: BLOG_AUTHOR_NAME

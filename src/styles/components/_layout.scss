@@ -1,8 +1,57 @@
+/*
+  Base
+*/
+
 @use '../config/variables'as v;
 
-/*
-  Layout
-*/
+$header-height-small: 4rem;
+$header-height-large: 8rem;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: v.$color-text;
+  line-height: v.$base-line-height;
+  font-size: 1.8rem;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  background-color: v.$color-body-background;
+  padding-top: $header-height-small;
+
+  @media (min-width: 768px) {
+    padding-top: $header-height-large;
+  }
+
+  &.layout-home,
+  &.layout-page {
+    background: v.$color-body-background url('/bitmap/bg_top_index.png') repeat-x top center;
+    background-size: 720px auto;
+  }
+
+  &.layout-post {
+    background: v.$color-body-background url('/bitmap/bg_top_other.png') repeat-x top center;
+    background-size: 720px auto;
+    margin-bottom: v.$spacing-unit * 3;
+  }
+
+
+}
+
+ul,
+ol {
+  margin-left: v.$spacing-unit;
+}
+
+li {
+
+  >ul,
+  >ol {
+    margin-bottom: 0;
+  }
+}
+
 
 .link-major {
   font-family: v.$heading-font-family;
@@ -36,7 +85,7 @@
   }
 
   &--brand {
-    color: v.$color-brand;
+    color: v.$color-accent;
   }
 }
 
@@ -46,7 +95,7 @@
   letter-spacing: .15em;
   text-transform: uppercase;
   text-decoration: none;
-  color: v.$color-brand;
+  color: v.$color-accent;
   font-size: 12px;
 }
 
@@ -123,6 +172,6 @@
 
 
 .post-link {
-  color: v.$color-brand;
+  color: v.$color-accent;
   text-decoration: none;
 }

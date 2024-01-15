@@ -1,0 +1,100 @@
+---
+import FormattedDate from "../components/FormattedDate.astro";
+import ContentLayout from "./ContentLayout.astro";
+
+interface Props {
+	pubDate?: string;
+	title: string;
+	description: string;
+	tags: string[];
+	updatedDate: string;
+	heroImage: string;
+	summary: string;
+}
+
+const { title, tags, pubDate, updatedDate, heroImage, summary } =
+	Astro.props;
+
+---
+
+<ContentLayout bodyclass="layout-post">
+	<article
+		class="post container"
+		itemscope
+		itemtype="http://schema.org/BlogPosting"
+	>
+		<header class="post-header">
+			{heroImage && (
+			<div
+				class="post-header-img center"
+				style={`background: transparent url('${heroImage}') no-repeat center; background-size: cover`}
+			/>
+			)}
+
+			<div class="post-header__meta">
+				{pubDate && <FormattedDate date={pubDate} />}
+				{ 
+					updatedDate && (
+							<div class="last-updated-on">
+								Last updated on <FormattedDate date={updatedDate} />
+							</div>
+						)
+					}
+				&nbsp;/&nbsp;
+				<div class="post-meta">
+					{
+						tags &&
+							tags.map((tag) => (
+								<span class="">{tag}</span>
+							))
+					}
+				</div>
+			</div>
+
+			<div class="post-header__headline">
+				<h1 class="post-title" itemprop="name headline">{title}</h1>
+			</div>
+
+			<div class="post-header__intro">
+				{summary}
+			</div>
+
+			<div class="post-header-secondary">
+				<div class="post-header-secondary__backlink">
+					<a class="" href="/">Back to start page</a>
+				</div>
+				<div class="post-header-secondary__sharing">
+					<div class="post-header-secondary__label">Share this:</div>
+					<div class="share-item">
+						<a
+							class="icon-logo-twitter"
+							href=""
+							title="Share this on Facebook"
+						>
+						</a>
+					</div>
+					<div class="share-item">
+						<a
+							class="icon-logo-fb"
+							href=""
+							title="Share this on Twitter"
+						>
+						</a>
+					</div>
+					<div class="share-item">
+						<a
+							class="icon-email"
+							href="mailto:youremail@email.com?subject=Have%20a%20look%20a%20this!&body=Email%20Body%20Text"
+							title="Share this via Email"
+						>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="post-content center" itemprop="articleBody">
+			<slot />
+		</div>
+	</article>
+</ContentLayout>

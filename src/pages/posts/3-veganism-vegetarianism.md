@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/Post.astro"
+layout: "../../layouts/PostLayout.astro"
 title: Veganism is a distinctly modern phenomenon
 summary: Eating used to be easy, now it is subject to myriads of opposing influences. We provide an alternative set of guidelines that aim to cut through the chaos.
 ---

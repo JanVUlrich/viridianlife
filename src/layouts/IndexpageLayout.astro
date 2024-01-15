@@ -1,0 +1,20 @@
+---
+import BaseLayout from "./BaseLayout.astro"
+import Footer from "../components/Footer.astro";
+import HeaderDynamic from "../components/HeaderDynamic.astro";
+
+interface Props {
+    bodyclass?: string;
+}
+
+const { bodyclass } = Astro.props;
+
+--- 
+<BaseLayout bodyclass={bodyclass}>
+    <HeaderDynamic />
+
+    <main aria-label="Content">
+        <slot />
+    </main>
+    <Footer />
+</BaseLayout>

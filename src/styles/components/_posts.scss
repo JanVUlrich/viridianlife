@@ -38,7 +38,7 @@
   letter-spacing: -1px;
   line-height: 1.2;
   margin-bottom: v.$spacing-unit * 2;
-  color: v.$color-brand;
+  color: v.$color-accent;
   text-decoration: none;
   font-weight: bold;
   text-align: left;
@@ -72,11 +72,11 @@
   }
 
   &:link {
-    color: v.$color-brand;
+    color: v.$color-accent;
   }
 
   &:visited {
-    color: v.$color-brand;
+    color: v.$color-accent;
   }
 
   &:hover {
@@ -106,7 +106,7 @@
 }
 
 .post-preview-headline {
-  color: v.$color-brand;
+  color: v.$color-accent;
   font-family: v.$heading-font-family;
   font-size: 32px;
   font-weight: bold;
@@ -119,7 +119,7 @@
     margin-bottom: v.$spacing-unit * 2;
   }
 
-  >a {
+  > a {
     color: inherit;
     text-decoration: none;
   }
@@ -226,7 +226,7 @@
 
     >a {
       text-decoration: none;
-      color: v.$color-brand;
+      color: v.$color-accent;
       line-height: 36px;
     }
   }
@@ -253,16 +253,10 @@
     height: 30px;
     background-position: center;
   }
-
-  &.icon-logo-twitter {}
-
-  &.icon-logo-fb {}
-
-  &.icon-email {}
 }
 
 .post-headline {
-  color: v.$color-brand;
+  color: v.$color-accent;
   text-decoration: none;
   font-weight: bold;
   text-align: left;
@@ -281,7 +275,7 @@
 
   h2 {
     font-size: 24px;
-    color: v.$color-brand;
+    color: v.$color-accent;
     font-weight: bold;
     font-family: v.$heading-font-family;
     line-height: 1.25;
@@ -307,7 +301,7 @@
   }
 
   h4 {
-    color: v.$color-brand;
+    color: v.$color-accent;
     font-weight: bold;
   }
 
@@ -320,7 +314,7 @@
   }
 
   a {
-    color: v.$color-brand;
+    color: v.$color-accent;
   }
 }
 
@@ -335,7 +329,7 @@
   &__headline {
     text-align: center;
     font-size: 24px;
-    color: v.$color-brand;
+    color: v.$color-accent;
     font-weight: bold;
     font-family: v.$heading-font-family;
     margin-bottom: v.$spacing-unit * 2;

@@ -1,8 +1,6 @@
 ---
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import { SITE_TITLE } from "../consts";
-import BaseLayout from "../layouts/BaseLayout.astro";
+import IndexpageLayout from "../layouts/IndexpageLayout.astro";
 
 interface Frontmatter {
   title: string;
@@ -12,10 +10,7 @@ interface Frontmatter {
 const allPosts = await Astro.glob<Frontmatter>("../pages/posts/*.md");
 ---
 
-<BaseLayout bodyclass={"layout-home"}>
-  <Header title={SITE_TITLE} />
-
-  <main class="page-index-content" aria-label="Content">
+<IndexpageLayout bodyclass={"layout-home"}>
     <div class="container">
       <div class="site-hero-start">
         <div class="site-logo-start">
@@ -23,7 +18,7 @@ const allPosts = await Astro.glob<Frontmatter>("../pages/posts/*.md");
         </div>
 
         <h1 class="site-title">{SITE_TITLE}</h1>
-        
+
         <div class="site-subtitle">
           Civilization probably was a bad idea. How do we make the best of it?
         </div>
@@ -67,7 +62,7 @@ const allPosts = await Astro.glob<Frontmatter>("../pages/posts/*.md");
             allPosts.map((post) => {
               return (
                 <article class="post-preview">
-                  <div class="post-date"></div>
+                  <div class="post-date" />
                   <div class="post-preview__text">
                     <header class="post-preview__header">
                       <h2 class="post-preview-headline">
@@ -75,7 +70,7 @@ const allPosts = await Astro.glob<Frontmatter>("../pages/posts/*.md");
                       </h2>
                     </header>
 
-                    <div class="post-preview__excerpt"></div>
+                    <div class="post-preview__excerpt" />
 
                     <footer>
                       <a class="post-continue-link" href={post.url}>
@@ -88,7 +83,6 @@ const allPosts = await Astro.glob<Frontmatter>("../pages/posts/*.md");
             })
           }
         </section>
-
 
         <div class="section-divider">
           <span>From the archives</span>
@@ -108,14 +102,10 @@ const allPosts = await Astro.glob<Frontmatter>("../pages/posts/*.md");
             <!-- {% endfor %} -->
           </ul>
         </section>
-
-
       </div>
+    
     </div>
-  </main>
-
-  <Footer />
-</BaseLayout>
+</IndexpageLayout>
 
 <style lang="scss">
   @use "../styles/config/variables" as v;
@@ -133,8 +123,7 @@ const allPosts = await Astro.glob<Frontmatter>("../pages/posts/*.md");
   .site-title {
     display: block;
     font-family: v.$base-font-family;
-    color: v.$color-brand;
-    text-decoration: none;
+    color: v.$color-accent;
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0;
@@ -143,7 +132,7 @@ const allPosts = await Astro.glob<Frontmatter>("../pages/posts/*.md");
 
   .site-subtitle {
     text-align: center;
-    color: v.$color-brand;
+    color: v.$color-accent;
     font-family: v.$heading-font-family;
     font-size: 1rem;
     font-weight: bold;

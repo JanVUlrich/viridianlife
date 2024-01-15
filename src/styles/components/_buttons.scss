@@ -20,7 +20,7 @@
   }
 
   &--filled {
-    background-color: v.$color-brand;
+    background-color: v.$color-accent;
     transition: background-color .15s, padding .15s;
     color: white;
 
@@ -38,7 +38,7 @@
     }
 
     &:hover {
-      background-color: darken(v.$color-brand, 7%);
+      background-color: darken(v.$color-accent, 7%);
       padding-right: 40px;
 
       &:after {

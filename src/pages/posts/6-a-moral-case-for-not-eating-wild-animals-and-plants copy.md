@@ -1,5 +1,5 @@
 ---
-layout: "../../layouts/Post.astro"
+layout: "../../layouts/PostLayout.astro"
 title: The moral case for not eating wild animals and plants
 date: 2018-04-15
 permalink: /the-moral-case-for-not-eating-wild-animals-and-plants

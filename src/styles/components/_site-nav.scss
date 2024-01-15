@@ -21,7 +21,7 @@
   font-size: 15px;
   text-align: right;
   line-height: 48px;
-  color: v.$color-brand;
+  color: v.$color-accent;
   text-transform: uppercase;
   letter-spacing: .15em;
   font-family: v.$heading-font-family;
@@ -36,7 +36,7 @@
   }
 
   &.is-toggled {
-    color: v.$color-brand;
+    color: v.$color-accent;
 
     .label-toggled {
       display: block;
@@ -97,13 +97,13 @@
     text-transform: uppercase;
     text-decoration: none;
     position: relative;
-    color: v.$color-brand;
+    color: v.$color-accent;
     text-align: center;
   }
 
   &__item:after{
     content: '';
-    border-bottom: 1px solid rgba(v.$color-brand,1);
+    border-bottom: 1px solid rgba(v.$color-accent,1);
     width: 20px;
     display: block;
     height: 1px;

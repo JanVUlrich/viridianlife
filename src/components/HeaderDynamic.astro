@@ -1,0 +1,71 @@
+---
+
+---
+<header class="site-header" id="site-header" role="banner">
+	<div class="site-header__contents container">
+		{/* TODO Only show if ! home */}
+
+		<!-- <a class="site-header-title" href="/">
+		<div class="site-header-title__logo">
+		  <img src="bitmap/logo_small.png" class="" />
+		</div>
+		<div class="site-header-title__name">
+		  {SITE_TITLE}
+		</div>
+	  </a>
+   -->
+		<button id="site-nav-toggle" class="site-nav-button">
+			<span class="label-default"> Menu =</span>
+			<span class="label-toggled"> Close &times;</span>
+		</button>
+	</div>
+
+	<nav id="site-nav" class="site-nav">
+		<div class="site-nav__wrap container">
+			<button id="site-nav-close" class="site-nav-close">
+				<span>Close</span>
+				<span>&times;</span>
+			</button>
+
+			<div class="site-nav__logo">
+				<img src="/bitmap/logo_small.png" class="" />
+			</div>
+
+			<!-- {% for my_page in site.pages %}
+			{% if my_page.title %}
+			  <a class="site-nav__item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+			{% endif %}
+		  {% endfor %}
+	   -->
+			<a class="site-nav__homelink" href="/">Go back to start</a>
+		</div>
+	</nav>
+</header>
+
+<script>
+	const navEl = document.getElementById("site-nav");
+	const navToggleEl = document.getElementById("site-nav-toggle");
+	const navCloseEl = document.getElementById("site-nav-close");
+	const headerEl = document.getElementById("site-header");
+
+	if (navToggleEl && navEl && navCloseEl) {
+		navToggleEl.addEventListener("click", function () {
+			navEl.classList.toggle("is-toggled");
+			navToggleEl.classList.toggle("is-toggled");
+		});
+		navCloseEl.addEventListener("click", function () {
+			navEl.classList.remove("is-toggled");
+			navToggleEl.classList.remove("is-toggled");
+		});
+	}
+
+	if (headerEl) {
+		document.addEventListener("scroll", function () {
+			if (document.body.getBoundingClientRect().y < -20) {
+				headerEl.classList.add("is-scrolled");
+			} else {
+				headerEl.classList.remove("is-scrolled");
+			}
+		});
+	}
+</script>
