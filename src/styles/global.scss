@@ -47,7 +47,7 @@ $grey-color-dark: darken($grey-color, 25%);
 @font-face {
     font-family: "Noticia Text";
     src: local("Noticia Text"),
-        url("/public/fonts/NoticiaText-Regular.ttf") format("truetype");
+        url("/fonts/NoticiaText-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -55,7 +55,7 @@ $grey-color-dark: darken($grey-color, 25%);
 @font-face {
     font-family: "Noticia Text";
     src: local("Noticia Text"),
-        url("/public/fonts/NoticiaText-Italic.ttf") format("truetype");
+        url("/fonts/NoticiaText-Italic.ttf") format("truetype");
     font-weight: normal;
     font-style: italic;
 }
@@ -63,7 +63,7 @@ $grey-color-dark: darken($grey-color, 25%);
 @font-face {
     font-family: "Noticia Text";
     src: local("Noticia Text"),
-        url("/public/fonts/NoticiaText-Bold.ttf") format("truetype");
+        url("/fonts/NoticiaText-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }
@@ -71,7 +71,7 @@ $grey-color-dark: darken($grey-color, 25%);
 @font-face {
     font-family: "Noticia Text";
     src: local("Noticia Text"),
-        url("/public/fonts/NoticiaText-BoldItalic.ttf") format("truetype");
+        url("/fonts/NoticiaText-BoldItalic.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
 }

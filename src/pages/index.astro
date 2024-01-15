@@ -3,26 +3,29 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE } from "../consts";
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+interface Frontmatter {
+  title: string;
+  description?: string;
+}
+
+const allPosts = await Astro.glob<Frontmatter>("../pages/posts/*.md");
 ---
 
 <BaseLayout bodyclass={"layout-home"}>
   <Header title={SITE_TITLE} />
+
   <main class="page-index-content" aria-label="Content">
     <div class="container">
-
       <div class="site-hero-start">
+        <div class="site-logo-start">
+          <img src="/bitmap/logo_small.png" class="" />
+        </div>
 
-          <div class="site-logo-start">
-            <img src="/public/bitmap/logo_small.png" class="" />
-          </div>
-
-          <h1 class="site-title">
-			This Viridian Life
-          </h1>
-		  <div>
-			Civilization probably was a bad idea. How do we make the best of it?
-		  </div>
-
+        <h1 class="site-title">{SITE_TITLE}</h1>
+        <div>
+          Civilization probably was a bad idea. How do we make the best of it?
+        </div>
       </div>
 
       <div class="home-wrap">
@@ -31,10 +34,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </div>
 
         <article class="featured-preview cf">
-          <div
-            class="featured-preview__img"
-            style="background-image: url('{{ featured_post.image }}')"
-          >
+          <div class="featured-preview__img" style="background-image: url(' ')">
           </div>
 
           <div class="featured-preview__text">
@@ -62,40 +62,32 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         </div>
 
         <section class="post-previews-list">
-          <!--   
-		  {% comment %} Note: change limit to 5 as soon as 8 posts are available {% endcomment %}
-		  {% for post in site.posts offset:1 limit:7 %} -->
+          {
+            allPosts.map((post) => {
+              return (
+                <article class="post-preview">
+                  <div class="post-date"></div>
+                  <div class="post-preview__text">
+                    <header class="post-preview__header">
+                      <h2 class="post-preview-headline">
+                        {post.frontmatter.title}
+                      </h2>
+                    </header>
 
-          <article class="post-preview">
-            <div class="post-date">
-              <!-- {{ post.date | date: "%b %-d, %Y" }} -->
-            </div>
-            <div class="post-preview__text">
-              <header class="post-preview__header">
-                <h2 class="post-preview-headline">
-                  <!-- <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a> -->
-                </h2>
-              </header>
+                    <div class="post-preview__excerpt"></div>
 
-              <div class="post-preview__excerpt">
-                <!-- {{ post.intro }} -->
-              </div>
-
-              <footer>
-                <a
-                  class="post-continue-link"
-                  href="{{ post.url | relative_url }}">Continue reading</a
-                >
-              </footer>
-            </div>
-          </article>
-
-          <!-- {% endfor %} -->
+                    <footer>
+                      <a class="post-continue-link" href={post.url}>
+                        Continue reading
+                      </a>
+                    </footer>
+                  </div>
+                </article>
+              );
+            })
+          }
         </section>
 
-        <!-- {% if site.posts.size > 6 %}
-  
-		{{ site.posts.size }} -->
 
         <div class="section-divider">
           <span>From the archives</span>
@@ -116,15 +108,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
           </ul>
         </section>
 
-        <!-- {% endif %}
-  
-  {% endcomment %} -->
+
       </div>
     </div>
   </main>
 
   <Footer />
 </BaseLayout>
+
 <style lang="scss">
   @use "../styles/config/variables" as v;
 
@@ -163,10 +154,9 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     }
   }
 
-
   .site-hero-start {
     margin-bottom: v.$spacing-unit * 3;
-	text-align: center;
+    text-align: center;
 
     @media (min-width: 360px) {
       margin-top: v.$spacing-unit * 4;
@@ -189,5 +179,4 @@ import BaseLayout from "../layouts/BaseLayout.astro";
       max-width: 100%;
     }
   }
-  
 </style>
