@@ -1,0 +1,15 @@
+---
+import type { PostMeta } from "../models/postmeta";
+ 
+const allPosts = await Astro.glob<PostMeta>("../pages/posts/*.md");
+const recents = allPosts.sort((p1, p2) => new Date(p1.frontmatter.pubDate) > new Date(p2.frontmatter.pubDate) ? 1 : 0).slice(0, 5)
+
+---
+<nav>
+    <a class="site-nav__homelink" href="/">Go back to start</a>
+    <h2>Most recent posts</h2>
+    {recents.map(p => <a class="site-nav__item" href={p.url}>{p.frontmatter.title}</a>)}
+    <a class="site-nav__item" href="/about">About</a>
+    <a class="site-nav__item" href="/imprint">Imprint</a>
+    <a class="site-nav__item" href="/privacy">Privacy</a>
+</nav>

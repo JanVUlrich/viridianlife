@@ -1,18 +1,11 @@
 ---
 import FormattedDate from "../components/FormattedDate.astro";
+import type { PostMeta } from "../models/postmeta";
 import ContentLayout from "./ContentLayout.astro";
 
-interface Props {
-	pubDate?: string;
-	title: string;
-	description: string;
-	tags: string[];
-	updatedDate: string;
-	heroImage: string;
-	summary: string;
-}
+interface Props extends PostMeta {}
 
-const { title, tags, pubDate, updatedDate, heroImage, summary } =
+const { title, tags, pubDate, updatedAt, heroImage, description } =
 	Astro.props;
 
 ---
@@ -34,9 +27,9 @@ const { title, tags, pubDate, updatedDate, heroImage, summary } =
 			<div class="post-header__meta">
 				{pubDate && <FormattedDate date={pubDate} />}
 				{ 
-					updatedDate && (
+					updatedAt && (
 							<div class="last-updated-on">
-								Last updated on <FormattedDate date={updatedDate} />
+								Last updated on <FormattedDate date={updatedAt} />
 							</div>
 						)
 					}
@@ -56,7 +49,7 @@ const { title, tags, pubDate, updatedDate, heroImage, summary } =
 			</div>
 
 			<div class="post-header__intro">
-				{summary}
+				{description}
 			</div>
 
 			<div class="post-header-secondary">
@@ -96,5 +89,6 @@ const { title, tags, pubDate, updatedDate, heroImage, summary } =
 		<div class="post-content center" itemprop="articleBody">
 			<slot />
 		</div>
+
 	</article>
 </ContentLayout>
