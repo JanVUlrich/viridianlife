@@ -33,9 +33,9 @@
   }
 
   &__headline {
-    color: v.$color-accent;
+    color: var(--vl-accent);
     font-family: v.$heading-font-family;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: bold;
     text-decoration: none;
     line-height: 1.2;

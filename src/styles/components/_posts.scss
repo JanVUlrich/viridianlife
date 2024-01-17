@@ -33,23 +33,23 @@
 
 .post-title,
 .page-title {
-  font-size: 28px;
-  padding-right: 25px;
+  font-size: 2.8rem;
+  padding-right: 2.4rem;
   letter-spacing: -1px;
   line-height: 1.2;
   margin-bottom: v.$spacing-unit * 2;
-  color: v.$color-accent;
+  color: var(--vl-accent);
   text-decoration: none;
   font-weight: bold;
   text-align: left;
   font-family: v.$heading-font-family;
 
   @include breakpoint-medium {
-    font-size: 36px;
+    font-size: 3.6rem;
   }
 
   @include breakpoint-large {
-    font-size: 42px;
+    font-size: 4.2rem;
   }
 }
 
@@ -64,19 +64,19 @@
     content: "\00BB";
     display: block;
     position: absolute;
-    right: 5px;
-    top: 2px;
+    right: 0.25em;
+    top: calc(50% - 0.5rem);
     transition: right .2s;
-    font-size: 22px;
-    line-height: 18px;
+    font-size: 2.2rem;
+    line-height: 1rem;
   }
 
   &:link {
-    color: v.$color-accent;
+    color: var(--vl-accent);
   }
 
   &:visited {
-    color: v.$color-accent;
+    color: var(--vl-accent);
   }
 
   &:hover {
@@ -90,10 +90,9 @@
 .post-date {
   flex: none;
   min-width: 120px;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-family: v.$heading-font-family;
   color: v.$grey-color;
-  font-weight: 600;
   margin-right: 20px;
   padding-top: 2px;
 }
@@ -102,20 +101,20 @@
   font-family: v.$heading-font-family;
   color: v.$grey-color;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .post-preview-headline {
-  color: v.$color-accent;
+  color: var(--vl-accent);
   font-family: v.$heading-font-family;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: bold;
   text-decoration: none;
   line-height: 1.2;
   margin-bottom: v.$spacing-unit * 3;
 
   @include max(v.$on-palm) {
-    font-size: 24px;
+    font-size: 2.4rem;
     margin-bottom: v.$spacing-unit * 2;
   }
 
@@ -135,7 +134,7 @@
   }
 
   &__date {
-    font-size: 18px;
+    font-size: 1.8rem;
     flex: none;
     width: 25%;
     min-width: 120px;
@@ -190,12 +189,12 @@
   }
 
   &__intro {
-    font-size: 22px;
+    font-size: 2.2rem;
     font-style: italic;
     margin-bottom: v.$spacing-unit * 4;
 
     @include max(v.$on-palm) {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
 
     @media (min-width: 768px) {
@@ -226,7 +225,7 @@
 
     >a {
       text-decoration: none;
-      color: v.$color-accent;
+      color: var(--vl-accent);
       line-height: 36px;
     }
   }
@@ -256,12 +255,12 @@
 }
 
 .post-headline {
-  color: v.$color-accent;
+  color: var(--vl-accent);
   text-decoration: none;
   font-weight: bold;
   text-align: left;
   font-family: v.$heading-font-family;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 1.2;
 }
 
@@ -274,20 +273,19 @@
   }
 
   h2 {
-    font-size: 24px;
-    color: v.$color-accent;
+    font-size: 2.4rem;
+    color: var(--vl-accent);
     font-weight: bold;
     font-family: v.$heading-font-family;
     line-height: 1.25;
     margin-bottom: 1rem;
 
     @include breakpoint-not-small {
-      font-size: 32px;
+      font-size: 3.2rem;
     }
   }
 
   h3 {
-    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .15em;
     font-weight: bold;
@@ -296,12 +294,12 @@
     margin-bottom: 1rem;
 
     @include breakpoint-not-small {
-      font-size: 22px;
+      font-size: 2.2rem;
     }
   }
 
   h4 {
-    color: v.$color-accent;
+    color: var(--vl-accent);
     font-weight: bold;
   }
 
@@ -314,7 +312,7 @@
   }
 
   a {
-    color: v.$color-accent;
+    color: var(--vl-accent);
   }
 }
 
@@ -328,8 +326,8 @@
 
   &__headline {
     text-align: center;
-    font-size: 24px;
-    color: v.$color-accent;
+    font-size: 2.4rem;
+    color: var(--vl-accent);
     font-weight: bold;
     font-family: v.$heading-font-family;
     margin-bottom: v.$spacing-unit * 2;

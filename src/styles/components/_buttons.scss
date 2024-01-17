@@ -20,7 +20,7 @@
   }
 
   &--filled {
-    background-color: v.$color-accent;
+    background-color: var(--vl-accent);
     transition: background-color .15s, padding .15s;
     color: white;
 
@@ -31,14 +31,14 @@
       right: 15px;
       top: 0px;
       transition: right .2s;
-      font-size: 22px;
+      font-size: 2.2rem;
       line-height: 30px;
       opacity: 0;
       transition: opacity .1s .0s;
     }
 
     &:hover {
-      background-color: darken(v.$color-accent, 7%);
+      background-color: var(--vl-accent-dark);
       padding-right: 40px;
 
       &:after {
@@ -47,9 +47,11 @@
       }
     }
   }
+
   &--rounded {
     border-radius: 18px;
   }
+  
   &--icon-left {
     .btn-icon {
       margin-right: 8px;

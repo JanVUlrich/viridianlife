@@ -12,12 +12,12 @@ html {
 }
 
 body {
-  color: v.$color-text;
+  color: var(--vl-text-primary);
   line-height: v.$base-line-height;
   font-size: 1.8rem;
   font-feature-settings: "kern" 1;
   font-kerning: normal;
-  background-color: v.$color-body-background;
+  background-color: var(--vl-bg-primary);
   padding-top: $header-height-small;
 
   @media (min-width: 768px) {
@@ -26,12 +26,12 @@ body {
 
   &.layout-home,
   &.layout-page {
-    background: v.$color-body-background url('/bitmap/bg_top_index.png') repeat-x top center;
+    background: var(--vl-bg-primary) url('/bitmap/bg_top_index.png') repeat-x top center;
     background-size: 720px auto;
   }
 
   &.layout-post {
-    background: v.$color-body-background url('/bitmap/bg_top_other.png') repeat-x top center;
+    background: var(--vl-bg-primary) url('/bitmap/bg_top_other.png') repeat-x top center;
     background-size: 720px auto;
     margin-bottom: v.$spacing-unit * 3;
   }
@@ -70,8 +70,7 @@ li {
     right: 5px;
     top: 2px;
     transition: right .2s;
-    font-size: 22px;
-    line-height: 18px;
+    font-size: 2.2rem;
   }
 
   &:hover {
@@ -85,7 +84,7 @@ li {
   }
 
   &--brand {
-    color: v.$color-accent;
+    color: var(--vl-accent);
   }
 }
 
@@ -95,8 +94,8 @@ li {
   letter-spacing: .15em;
   text-transform: uppercase;
   text-decoration: none;
-  color: v.$color-accent;
-  font-size: 12px;
+  color: var(--vl-accent);
+  font-size: 1.2rem;
 }
 
 
@@ -126,7 +125,7 @@ li {
 
 .post-link {
   display: block;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 
 
@@ -172,6 +171,6 @@ li {
 
 
 .post-link {
-  color: v.$color-accent;
+  color: var(--vl-accent);
   text-decoration: none;
 }
