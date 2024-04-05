@@ -1,9 +1,14 @@
+export interface FrontMatter {
+    readonly author: string;
+    readonly title: string;
+    readonly description: string;
+    readonly pubDate: string; // iso date string
+    readonly tags: string[];
+    readonly heroImage: string;
+    readonly updatedAt?: string; // iso date string
+    readonly slug?: string; // permalink
+}
+
 export interface PostMeta {
-    title: string;
-    description: string;
-    slug?: string; // permalink
-    pubDate: string; // iso date string
-    updatedAt?: string; // iso date string
-    tags: string[];
-	heroImage: string;
+    readonly frontmatter: FrontMatter;
 }
