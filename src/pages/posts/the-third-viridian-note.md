@@ -1,6 +1,7 @@
 ---
 layout: "../../layouts/PostLayout.astro"
 title: "The third viridian note: how this blog got its name"
+pubDate: 2024-01-06
 ---
 
 # The third viridian note

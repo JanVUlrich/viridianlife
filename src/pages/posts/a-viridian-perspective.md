@@ -1,10 +1,10 @@
 ---
 layout: "../../layouts/PostLayout.astro"
 title: "Inaugural post: A viridian perspective"
-pubDate: 2021-01-10
 author: BLOG_AUTHOR_NAME
 intro: "The self-inflicted challenges of humanity may seem too big so solve, let alone efficiently tackle. We're collectively lacking imagination, perseverance, consistency and the motivation. What to do?"
 image: "/images/posts/"
+pubDate: 2024-01-01
 tags: [Sustainability, "General Thoughts"]
 ---
 

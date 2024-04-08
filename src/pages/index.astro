@@ -1,13 +1,14 @@
 ---
 import { SITE_TITLE } from "../consts";
 import IndexpageLayout from "../layouts/IndexpageLayout.astro";
-import type { PostMeta } from "../models/postmeta";
+// import type { PostMeta } from "../models/postmeta";
 
-const allPosts = await Astro.glob<PostMeta>("../pages/posts/*.md");
-const sorted = allPosts.sort((p1, p2) => new Date(p1.frontmatter.pubDate) > new Date(p2.frontmatter.pubDate) ? 1 : 0)
+const allPosts = await Astro.glob("../pages/posts/*.md"); 
+   
+const sorted = allPosts.sort((p1, p2) => new Date(p1.frontmatter.pubDate) < new Date(p2.frontmatter.pubDate) ? 1 : -1)
+
 const featuredPost = sorted[0]
-const recents = sorted.slice(1,5)
-
+const recents = sorted.slice(1,10)
 ---
 
 <IndexpageLayout bodyclass={"layout-home"}>

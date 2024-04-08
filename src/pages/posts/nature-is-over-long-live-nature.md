@@ -1,7 +1,8 @@
 ---
 layout: "../../layouts/PostLayout.astro"
-title: Nature is over. long live nature! 
-summary: Nature is over
+title: "Nature is over. long live nature!"
+summary: "Nature is over"
+pubDate: 2024-01-05
 ---
 
 
@@ -15,8 +16,9 @@ summary: Nature is over
 
 
 # Humans must reduce their footprint
-* Oil crop replacement (zero acre)
 * Protein source replacement (https://en.wikipedia.org/wiki/Cultured_meat) 
 * Winston Churchill wrote in 1931: “We shall escape the absurdity of growing a whole chicken in order to eat the breast or wing, by growing these parts separately under a suitable medium.” 
 * Outlawing food waste (mandatory donations to food banks)
-
+* Oil crop replacement: zero acre
+* Animal fats will probably be replaced: 
+  * High stearic acid sunflower oil: https://www.sunflowernsa.com/oil/Four-Types-of-Sunflower-Oil/

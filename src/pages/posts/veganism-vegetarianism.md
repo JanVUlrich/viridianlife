@@ -2,6 +2,7 @@
 layout: "../../layouts/PostLayout.astro"
 title: Veganism is a distinctly modern phenomenon
 summary: Eating used to be easy, now it is subject to myriads of opposing influences. We provide an alternative set of guidelines that aim to cut through the chaos.
+pubDate: 2024-01-07
 ---
 
 ## Animal products played an essential part homo sapiens’ origin story

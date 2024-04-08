@@ -1,6 +1,7 @@
 ---
 layout: "../../layouts/PostLayout.astro"
 title: To live meaningfully, reject cynicism
+pubDate: 2024-01-04
 ---
 
 # Modern cynicism is a dark place
@@ -60,7 +61,9 @@ https://www.amazon.com/Meditations-New-Translation-Marcus-Aurelius/dp/0812968255
 https://www.vocabulary.com/dictionary/cynicism
 
 
-
+# Hope and Utopia
+* Solarpunk
+* Action is a solution to despair
 
 # Modern cynicism is a dark place
 * Modernity is defined by the belief that the future will be better – without it, credit would be impossible, and research and science would all but disappear

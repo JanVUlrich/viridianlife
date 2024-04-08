@@ -1,7 +1,8 @@
 ---
 layout: "../../layouts/PostLayout.astro"
 title: "How to eat in the modern world: an attempt at simplifying a needlessly complex topic"
-summary: Eating used to be easy, now it is subject to myriads of opposing influences. We provide an alternative set of guidelines that aim to cut through the chaos.
+summary: "Eating used to be easy, now it is subject to myriads of opposing influences."
+pubDate: 2024-01-02
 --- 
 
 
