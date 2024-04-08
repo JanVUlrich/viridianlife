@@ -1,9 +1,8 @@
 ---
 import { SITE_TITLE } from "../consts";
 import Sitenav from "./Sitenav.astro";
-
-
 ---
+
 <header class="site-header site-header-static" id="site-header" role="banner">
 	<div class="container">
 		<a class="site-header-title" href="/">
@@ -43,15 +42,18 @@ import Sitenav from "./Sitenav.astro";
 	const navCloseEl = document.getElementById("site-nav-close");
 	const headerEl = document.getElementById("site-header");
 
-	if (navToggleEl && navEl && navCloseEl) {
-		navToggleEl.addEventListener("click", function () {
-			navEl.classList.toggle("is-toggled");
-			navToggleEl.classList.toggle("is-toggled");
-		});
-		navCloseEl.addEventListener("click", function () {
-			navEl.classList.remove("is-toggled");
-			navToggleEl.classList.remove("is-toggled");
-		});
+	const showMenu = () => {
+		navEl && navEl.classList.add("is-toggled");
+		navToggleEl && navToggleEl.classList.add("is-toggled");
+	}
+	const closeMenu = () => {
+		navEl && navEl.classList.remove("is-toggled");
+		navToggleEl && navToggleEl.classList.remove("is-toggled");
+	}
+
+	if (navToggleEl && navCloseEl) {
+		navToggleEl.addEventListener("click", showMenu)
+		navCloseEl.addEventListener("click", closeMenu)
 	}
 
 	if (headerEl) {

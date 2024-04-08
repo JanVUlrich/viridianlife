@@ -10,13 +10,15 @@
   left: 0;
   right: 0;
   position: fixed;
+  display: flex;
+  align-items: center;
   width: 100%;
   z-index: 9000;
   transition: background-color .25s;
   background-color: transparent;
 
   &.is-scrolled {
-    background-color: var(--light-beige)
+    background-color: var(--vl-beige-light)
   }
 
   &__contents {
@@ -40,9 +42,9 @@
 
 .site-header-title {
   display: flex;
-  width: 300px;
+width: 300px;
   align-items: center;
-  height: 60px;
+height: 60px;
   text-decoration: none;
 
   &:hover {
@@ -63,7 +65,7 @@
   &__name {
     font-family: v.$base-font-family;
     font-weight: bold;
-    color: var(--accent);
+    color: var(--vl-accent);
 
     @media (max-width: 30em) {
       font-size: 1.8rem;

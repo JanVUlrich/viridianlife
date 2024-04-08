@@ -1,9 +1,10 @@
 ---
 import Sitenav from "./Sitenav.astro";
+
 ---
 
 <header class="site-header site-header-dynamic" id="site-header" role="banner">
-	<div class="site-header__contents container">
+	<div class="container">
 		<button id="site-nav-toggle" class="site-nav-button">
 			<span class="label-default">Menu =</span>
 			<span class="label-toggled">Close &times;</span>
@@ -30,25 +31,27 @@ import Sitenav from "./Sitenav.astro";
 	const navCloseEl = document.getElementById("site-nav-close");
 	const headerEl = document.getElementById("site-header");
 
+	const showMenu = () => {
+		navEl && navEl.classList.add("is-toggled");
+		navToggleEl && navToggleEl.classList.add("is-toggled");
+	}
+	const closeMenu = () => {
+		navEl && navEl.classList.remove("is-toggled");
+		navToggleEl && navToggleEl.classList.remove("is-toggled");
+	}
+
+	if (navToggleEl && navCloseEl) {
+		navToggleEl.addEventListener("click", showMenu)
+		navCloseEl.addEventListener("click", closeMenu)
+	}
+
 	if (headerEl) {
 		document.addEventListener("scroll", function () {
-			if (document.body.getBoundingClientRect().y < -30) {
+			if (document.body.getBoundingClientRect().y < -20) {
 				headerEl.classList.add("is-scrolled");
 			} else {
 				headerEl.classList.remove("is-scrolled");
 			}
-		});
-	}
-
-	if (navToggleEl && navEl && navCloseEl) {
-		navToggleEl.addEventListener("click", function () {
-			console.log("click");
-			navEl.classList.add("is-toggled");
-			navToggleEl.classList.add("is-toggled");
-		});
-		navCloseEl.addEventListener("click", function () {
-			navEl.classList.remove("is-toggled");
-			navToggleEl.classList.remove("is-toggled");
 		});
 	}
 
