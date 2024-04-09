@@ -85,9 +85,13 @@ const { frontmatter: { title, tags, pubDate, updatedAt, heroImage, description }
 			</div>
 		</header>
 
-		<div class="post-content center" itemprop="articleBody">
+		<div class="post-content" itemprop="articleBody">
 			<slot />
 		</div>
 
 	</article>
 </ContentLayout>
+
+<style lang="scss" is:global>
+	@import "../styles/components/post-layout.scss";
+</style>

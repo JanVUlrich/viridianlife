@@ -1,4 +1,4 @@
-@use '../config/variables'as v;
+@use '../config/'as v;
 
 /*
   Site header for other pages
@@ -18,7 +18,7 @@
   background-color: transparent;
 
   &.is-scrolled {
-    background-color: var(--vl-beige-light)
+    background-color: var(--vl-bg-primary)
   }
 
   &__contents {

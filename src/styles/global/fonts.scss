@@ -1,4 +1,20 @@
 @font-face {
+    font-family: "Assistant";
+    src: local("Assistant"),
+        url("/fonts/Assistant-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: local("Work Sans"),
+        url("/fonts/WorkSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
     font-family: "Noticia Text";
     src: local("Noticia Text"),
         url("/fonts/NoticiaText-Regular.ttf") format("truetype");

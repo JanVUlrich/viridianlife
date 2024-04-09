@@ -1,0 +1,19 @@
+@use '../config/' as v;
+
+
+.container {
+    position: relative;
+    padding: 0 (v.$spacing-unit * 5);
+  
+    @media (min-width: v.$breakpoint-small) {
+      margin: 0 auto;
+    }
+  
+    @media (min-width: v.$breakpoint-medium) {
+      width: 80%;
+    }
+  
+    @media (min-width: v.$breakpoint-large) {
+      width: 75%;
+    }
+}

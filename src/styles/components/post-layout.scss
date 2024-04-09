@@ -1,35 +1,8 @@
-@use '../config/variables'as v;
+@use '../config/' as v;
 
 /**
  * Posts
  */
-
-.post,
-.page {
-  font-family: v.$base-font-family;
-  margin-bottom: 2rem;
-
-  @media (min-width: 768px) {
-    margin-bottom: 4rem;
-  }
-}
-
-.post {
-  padding-top: 100px;
-}
-
-.post-body {
-  margin: 0 auto;
-  max-width: 960px;
-}
-
-.page {
-  padding-top: 120px;
-}
-
-.page-header {
-  margin-bottom: v.$spacing-unit * 6;
-}
 
 .post-title,
 .page-title {
@@ -44,11 +17,10 @@
   text-align: left;
   font-family: v.$heading-font-family;
 
-  @include breakpoint-medium {
+  @media (min-width: v.$breakpoint-medium) {
     font-size: 3.6rem;
   }
-
-  @include breakpoint-large {
+  @media (min-width: v.$breakpoint-large){
     font-size: 4.2rem;
   }
 }
@@ -92,75 +64,15 @@
   min-width: 120px;
   font-size: 1.8rem;
   font-family: v.$heading-font-family;
-  color: v.$grey-color;
-  margin-right: 20px;
-  padding-top: 2px;
+  color: v.$color-grey-middle;
+  margin-right: 2rem;
+  padding-top: 0.2rem;
 }
 
 .post-meta {
   font-family: v.$heading-font-family;
-  color: v.$grey-color;
-  font-weight: 600;
+  color: v.$color-grey-middle;
   font-size: 1.8rem;
-}
-
-.post-preview-headline {
-  color: var(--vl-accent);
-  font-family: v.$heading-font-family;
-  font-size: 3.2rem;
-  font-weight: bold;
-  text-decoration: none;
-  line-height: 1.2;
-  margin-bottom: v.$spacing-unit * 3;
-
-  @include max(v.$on-palm) {
-    font-size: 2.4rem;
-    margin-bottom: v.$spacing-unit * 2;
-  }
-
-  > a {
-    color: inherit;
-    text-decoration: none;
-  }
-}
-
-.post-preview {
-  padding-bottom: 40px;
-  margin-bottom: v.$spacing-unit * 3;
-  display: flex;
-
-  @include max(v.$on-palm) {
-    display: block;
-  }
-
-  &__date {
-    font-size: 1.8rem;
-    flex: none;
-    width: 25%;
-    min-width: 120px;
-    font-family: v.$heading-font-family;
-    color: v.$grey-color;
-    font-weight: 600;
-    margin-top: 2px;
-
-    @include max(v.$on-palm) {
-      width: 100%
-    }
-  }
-
-  &__text {
-    width: 75%;
-    max-width: 600px;
-
-    @include max(v.$on-palm) {
-      width: 100%
-    }
-  }
-
-  &__excerpt {
-    font-family: v.$base-font-family;
-    margin-bottom: 1rem;
-  }
 }
 
 
@@ -177,10 +89,10 @@
 }
 
 .post-header {
-  margin-bottom: 3rem;
+  margin-bottom: 1.6rem;
 
-  @media (max-width: 30em) {
-    margin-bottom: 15px;
+  @media (mimn-width: v.$breakpoint-small) {
+    margin-bottom: 3rem;
   }
 
   &__meta {
@@ -193,7 +105,7 @@
     font-style: italic;
     margin-bottom: v.$spacing-unit * 4;
 
-    @include max(v.$on-palm) {
+    @media (max-width: v.$breakpoint-small-max) {
       font-size: 1.8rem;
     }
 
@@ -207,11 +119,11 @@
   border-top: 1px solid v.$color-grey-light;
   padding-top: 7px;
 
-  @include max(v.$on-palm) {
+  @media (max-width: v.$breakpoint-small-max) {
     margin-bottom: 24px;
   }
 
-  @include min(v.$on-palm) {
+  @media (min-width: v.$breakpoint-small) {
     display: flex;
   }
 
@@ -219,37 +131,37 @@
     height: 36px;
     margin-right: auto;
 
-    @include max(v.$on-palm) {
+    @media (max-width: v.$breakpoint-small-max) {
       display: none;
     }
 
     >a {
       text-decoration: none;
       color: var(--vl-accent);
-      line-height: 36px;
+      line-height: 3.6rem;
     }
   }
 
   &__sharing {
     display: flex;
-    height: 36px;
+    height: 3.6rem;
     align-items: center;
 
-    @include max(v.$on-palm) {}
+    @media (max-width: v.$breakpoint-small-max) {}
   }
 }
 
 .share-item {
-  width: 30px;
-  height: 30px;
+  width: 3rem;
+  height: 3rem;
   display: block;
   flex: none;
-  margin-left: 16px;
+  margin-left: 1.6rem;
 
   >a {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     background-position: center;
   }
 }
@@ -267,20 +179,18 @@
 
 .post-content,
 .page-content {
-
-  @media (min-width: 768px) {
-    padding-right: 35%;
-  }
+  margin: 0 auto;
+  max-width: 65ch;
 
   h2 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     color: var(--vl-accent);
     font-weight: bold;
-    font-family: v.$heading-font-family;
+    font-family: v.$base-font-family;
     line-height: 1.25;
     margin-bottom: 1rem;
 
-    @include breakpoint-not-small {
+    @media (min-width: v.$breakpoint-small) {
       font-size: 3.2rem;
     }
   }
@@ -293,7 +203,7 @@
     line-height: 1.25;
     margin-bottom: 1rem;
 
-    @include breakpoint-not-small {
+    @media (min-width: v.$breakpoint-small) {
       font-size: 2.2rem;
     }
   }
@@ -305,10 +215,6 @@
 
   h4+p {
     margin-top: 0;
-  }
-
-  p+h2 {
-    margin-top: 2rem;
   }
 
   a {

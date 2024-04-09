@@ -1,0 +1,48 @@
+@use '../config/'as v;
+
+/*
+  Layout base
+*/
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: v.$base-font-family;
+  color: var(--vl-text-primary);
+  line-height: v.$base-line-height;
+  font-size: 1.8rem;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  background-color: var(--vl-bg-primary);
+  padding-top: v.$header-height-small;
+
+  @media (min-width: v.$breakpoint-small) {
+    padding-top: v.$header-height-large;
+  }
+
+  &.layout-home,
+  &.layout-page,
+  &.layout-post {
+    background: var(--vl-bg-primary) url('/png/bg_top_index.png') repeat-x top center;
+    background-size: 720px auto;
+  }
+}
+
+ul,
+ol {
+  margin-left: v.$spacing-unit;
+}
+
+li {
+
+  >ul,
+  >ol {
+    margin-bottom: 0;
+  }
+}
+
+
+

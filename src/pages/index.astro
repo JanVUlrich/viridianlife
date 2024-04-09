@@ -1,111 +1,139 @@
 ---
 import { SITE_TITLE } from "../consts";
 import IndexpageLayout from "../layouts/IndexpageLayout.astro";
-// import type { PostMeta } from "../models/postmeta";
 
-const allPosts = await Astro.glob("../pages/posts/*.md"); 
-   
-const sorted = allPosts.sort((p1, p2) => new Date(p1.frontmatter.pubDate) < new Date(p2.frontmatter.pubDate) ? 1 : -1)
-
-const featuredPost = sorted[0]
-const recents = sorted.slice(1,10)
+const allPosts = await Astro.glob("../pages/posts/*.md");
+const sorted = allPosts.sort((p1, p2) =>
+  new Date(p1.frontmatter.pubDate) < new Date(p2.frontmatter.pubDate) ? 1 : -1
+);
+const featuredPost = sorted[0];
+const recents = sorted.slice(1, 10);
 ---
 
 <IndexpageLayout bodyclass={"layout-home"}>
-    <div class="container">
-      <div class="site-hero-start">
-        <div class="site-logo-start">
-          <img src="/png/logo_small.png" class="" />
-        </div>
-        <h1 class="site-title">{SITE_TITLE}</h1>
-        <div class="site-subtitle">
-          Civilization probably was a bad idea. How do we make the best of it?
-        </div>
+  <div class="container">
+    <div class="site-hero-start">
+      <div class="site-logo-start">
+        <img src="/png/logo_small.png" class="" />
       </div>
-
-      <div class="home-wrap">
-        <div class="section-divider">
-          <span>Latest</span>
-        </div>
-        <article class="featured-preview cf">
-          <div class="featured-preview__img" style="background-image: url(' ')">
-          </div>
-
-          <div class="featured-preview__text">
-            <div class="featured-textcontent">
-              <div class="post-date">
-                {featuredPost.frontmatter.pubDate}
-              </div>
-              <h2 class="post-preview-headline">
-                {featuredPost.frontmatter.title}
-              </h2>
-              <div class="featured-textcontent__excerpt">
-                {featuredPost.frontmatter.description}              </div>
-              <a
-                class="post-continue-link"
-                href={featuredPost.url}
-                >Continue reading</a
-              >
-            </div>
-          </div>
-        </article>
-
-        <div class="section-divider">
-          <span>Further reading</span>
-        </div>
-
-        <section class="post-previews-list">
-          {
-            recents.map((post) => {
-              return (
-                <article class="post-preview">
-                  <div class="post-date" />
-                  <div class="post-preview__text">
-                    <header class="post-preview__header">
-                      <h2 class="post-preview-headline">
-                        {post.frontmatter.title}
-                      </h2>
-                    </header>
-
-                    <div class="post-preview__excerpt" />
-
-                    <footer>
-                      <a class="post-continue-link" href={post.url}>
-                        Continue reading
-                      </a>
-                    </footer>
-                  </div>
-                </article>
-              );
-            })
-          }
-        </section>
-
-        <div class="section-divider">
-          <span>From the archives</span>
-        </div>
-
-        <section class="archive-previews">
-          <ul class="list-unstyled archive-previews-list">
-            <!-- {% for post in site.posts offset:6 %} -->
-            <li class="archive-preview">
-              <div class="post-date">
-                <!-- {{ post.date | date: "%b %-d, %Y" }} -->
-              </div>
-              <h3 class="archive-preview__headline">
-                <!-- <a class="" href="{{ post.url }}">{{ post.title }}</a> -->
-              </h3>
-            </li>
-            <!-- {% endfor %} -->
-          </ul>
-        </section>
+      <h1 class="site-title">{SITE_TITLE}</h1>
+      <div class="site-subtitle">
+        Civilization probably was a bad idea. How do we make the best of it?
       </div>
-    
     </div>
+
+    <div class="home-wrap">
+      <div class="section-divider">
+        <span>Latest</span>
+      </div>
+      <article class="featured-preview">
+        <div class="featured-preview__img" style="background-image: url(' ')">
+        </div>
+
+        <div class="featured-preview__text">
+          <div class="featured-textcontent">
+            <div class="post-date">
+              {featuredPost.frontmatter.pubDate}
+            </div>
+            <h2 class="post-preview-headline">
+              {featuredPost.frontmatter.title}
+            </h2>
+            <div class="featured-textcontent__excerpt">
+              {featuredPost.frontmatter.description}
+            </div>
+            <a class="post-continue-link" href={featuredPost.url}
+              >Continue reading</a
+            >
+          </div>
+        </div>
+      </article>
+
+      <div class="section-divider">
+        <span>Further reading</span>
+      </div>
+
+      <section class="post-previews-list">
+        {
+          recents.map((post) => {
+            return (
+              <article class="post-preview">
+                <div class="post-preview-image">
+                  {post.frontmatter.heroImage && post.frontmatter.heroImage}
+                </div>
+                <div class="post-preview-text">
+                  <div class="post-preview-date">
+                    {post.frontmatter.pubDate}
+                  </div>
+                  <h2 class="post-preview-headline">
+                    {post.frontmatter.title}
+                  </h2>
+                  <a class="post-continue-link" href={post.url}>
+                    Continue reading
+                  </a>
+                </div>
+              </article>
+            );
+          })
+        }
+      </section>
+
+      <div class="section-divider">
+        <span>From the archives</span>
+      </div>
+
+      <section class="archive-previews">
+        <ul class="list-unstyled archive-previews-list">
+          <!-- {% for post in site.posts offset:6 %} -->
+          <li class="archive-preview">
+            <div class="post-date">
+              <!-- {{ post.date | date: "%b %-d, %Y" }} -->
+            </div>
+            <h3 class="archive-preview__headline">
+              <!-- <a class="" href="{{ post.url }}">{{ post.title }}</a> -->
+            </h3>
+          </li>
+          <!-- {% endfor %} -->
+        </ul>
+      </section>
+    </div>
+  </div>
 </IndexpageLayout>
 
 <style lang="scss">
-  @use "../styles/config/variables" as v;
+  @use "../styles/config/" as v;
+
+  @import "../styles/components/post-preview.scss";
+
+  .featured-preview {
+    margin-bottom: v.$spacing-unit * 6;
+
+    @media (min-width: v.$breakpoint-large) {
+      display: flex;
+    }
+
+    &__img {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 20rem;
+      background-color: #888;
+
+      @media (min-width: v.$breakpoint-large) {
+        width: 50%;
+        flex: none;
+        order: 2;
+      }
+    }
+
+    &__text {
+      flex: none;
+
+      @media (min-width: v.$breakpoint-large) {
+        width: 50%;
+        order: 1;
+      }
+    }
+  }
 
   .site-hero-start {
     margin-bottom: v.$spacing-unit * 3;
@@ -149,5 +177,10 @@ const recents = sorted.slice(1,10)
     > img {
       max-width: 100%;
     }
+  }
+
+  .post-list {
+    margin-left: 0;
+    list-style: none;
   }
 </style>

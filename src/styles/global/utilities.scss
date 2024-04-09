@@ -32,55 +32,6 @@
 }
 
 
-@mixin breakpoint-small {
-  @media screen and (max-width: 30em) {
-    @content;
-  }
-}
-
-
-@mixin breakpoint-not-small {
-  @media screen and (min-width: 30em) {
-    @content;
-  }
-}
-
-
-@mixin breakpoint-medium {
-  @media screen and (min-width: 30em) and (max-width: 60em) {
-    @content;
-  }
-}
-
-
-@mixin breakpoint-large {
-  @media screen and (min-width: 60em) {
-    @content;
-  }
-}
-
-
-@mixin breakpoint-not-large {
-  @media screen and (max-width: 60em) {
-    @content;
-  }
-}
-
-
-@mixin min($bp) {
-  @media (min-width: $bp) {
-    @content;
-  }
-}
-
-
-@mixin max($bp) {
-  @media (max-width: $bp) {
-    @content;
-  }
-}
-
-
 @mixin list-unstyled {
   list-style-type: none;
   margin: 0;

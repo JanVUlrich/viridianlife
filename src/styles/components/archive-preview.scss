@@ -1,4 +1,4 @@
-@use '../config/variables'as v;
+@use '../config/'as v;
 
 .archive-previews {
   margin-bottom: v.$spacing-unit * 4;
@@ -13,23 +13,19 @@
   margin-right: 5%;
   flex: none;
 
-  @include breakpoint-small {
+  @media (min-width: v.$breakpoint-small) {
     width: 95%;
     margin-bottom: v.$spacing-unit * 2;
   }
 
-  @include breakpoint-medium {
+  @media (min-width: v.$breakpoint-medium) {
     width: 45%;
     margin-bottom: v.$spacing-unit * 4;
   }
 
-  @include breakpoint-large {
+  @media (min-width: v.$breakpoint-large){
     width: 28%;
     margin-bottom: v.$spacing-unit * 4;
-  }
-
-  &__item {
-
   }
 
   &__headline {

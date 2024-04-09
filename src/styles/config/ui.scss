@@ -1,0 +1,35 @@
+/*
+    UI Config
+*/
+
+$base-font-family: "Noticia Text", "Helvetica Neue", Arial, sans-serif;
+$heading-font-family: "Helvetica Neue", Arial, sans-serif;
+
+$base-font-size: 1rem;
+
+$base-font-size: 1.6rem;
+$base-font-weight: 400;
+$base-line-height: 1.7;
+
+$spacing-unit: 0.4rem;
+
+$header-height-small: 4rem;
+$header-height-large: 8rem;
+
+
+// Colors
+$color-grey-light: hsl(180, 3%, 71%);
+$color-accent: hsl(180, 100%, 25%);
+$color-text: hsl(180, 21%, 11%);
+
+$color-body-background: hsl(43, 100%, 99%);
+
+$color-grey-lightest: hsl(0, 0%, 90%);
+$color-grey-middle: hsl(0, 0%, 50%);
+$color-grey-dark: hsl(0, 0%, 30%);
+
+$breakpoint-large: 1100px !default;
+$breakpoint-medium-max: ($breakpoint-large - 0.02px) !default;
+$breakpoint-medium: 640px !default;
+$breakpoint-small-max: ($breakpoint-medium - 0.02px) !default;
+$breakpoint-small: 480px !default;

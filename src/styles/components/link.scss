@@ -1,0 +1,47 @@
+@use '../config/'as v;
+
+.link-major {
+    font-family: v.$heading-font-family;
+    font-weight: bold;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 22px;
+    position: relative;
+  
+    &:after {
+      content: "\00BB";
+      display: block;
+      position: absolute;
+      right: 5px;
+      top: 2px;
+      transition: right .2s;
+      font-size: 2.2rem;
+    }
+  
+    &:hover {
+      &:after {
+        right: 0px;
+      }
+    }
+  
+    &--white {
+      color: white;
+    }
+  
+    &--brand {
+      color: var(--vl-accent);
+    }
+  }
+  
+  .link-minor {
+    font-family: v.$heading-font-family;
+    font-weight: bold;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--vl-accent);
+    font-size: 1.2rem;
+  }
+  

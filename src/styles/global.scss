@@ -1,26 +1,15 @@
 /*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+  Global styles 
+*/
 
- @import "base/normalize";
- @import "base/fonts";
- @import "base/root";
+@import "global/";
 
-@import "utilities/widths";
-@import "utilities/utilities";
-@import "utilities/grid";
-
-@import "components/layout";
 @import "components/buttons";
+@import "components/link";
 @import "components/icons";
-
-@import "components/posts";
-@import "components/site-header-other";
+@import "components/site-header";
 @import "components/site-footer";
 @import "components/site-nav";
 @import "components/archive-preview";
 @import "components/divider";
-@import "components/featured-post";
 @import "components/sharebox";
