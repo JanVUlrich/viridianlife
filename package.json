@@ -8,18 +8,20 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lint:scss": "stylelint 'src/**/*.{astro,scss,svelte}'"
   },
   "dependencies": {
-    "@astrojs/check": "^0.3.1",
-    "@astrojs/mdx": "^2.1.1",
+    "@astrojs/check": "^0.3.4",
+    "@astrojs/mdx": "^2.2.4",
     "@astrojs/rss": "^3.0.0",
-    "@astrojs/sitemap": "^3.0.3",
-    "astro": "^4.3.6",
-    "typescript": "^5.2.2"
+    "@astrojs/sitemap": "^3.1.2",
+    "astro": "^4.5.18",
+    "stylelint": "^16.3.1",
+    "typescript": "^5.4.4"
   },
   "devDependencies": {
-    "@types/react": "^18.2.47",
-    "sass": "^1.69.5"
+    "@types/react": "^18.2.75",
+    "sass": "^1.74.1"
   }
 }
