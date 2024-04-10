@@ -42,3 +42,10 @@
 .list-unstyled {
   @include list-unstyled;
 }
+
+.c-accent  {
+  color: var(--vl-accent);
+}
+.w-fit {
+  width: fit-content;
+}

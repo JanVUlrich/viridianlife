@@ -1,47 +1,16 @@
-@font-face {
-    font-family: "Assistant";
-    src: local("Assistant"),
-        url("/fonts/Assistant-Bold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-}
 
 @font-face {
-    font-family: "Work Sans";
-    src: local("Work Sans"),
-        url("/fonts/WorkSans-Bold.ttf") format("truetype");
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "Noticia Text";
-    src: local("Noticia Text"),
-        url("/fonts/NoticiaText-Regular.ttf") format("truetype");
+    font-family: "Plex Serif";
+    src: local("Plex Serif"),
+        url("/fonts/IBMPlexSerif.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Noticia Text";
-    src: local("Noticia Text"),
-        url("/fonts/NoticiaText-Italic.ttf") format("truetype");
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "Noticia Text";
-    src: local("Noticia Text"),
-        url("/fonts/NoticiaText-Bold.ttf") format("truetype");
+    font-family: "Plex Serif";
+    src: local("Plex Serif"),
+        url("/fonts/IBMPlexSerif-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
-}
-
-@font-face {
-    font-family: "Noticia Text";
-    src: local("Noticia Text"),
-        url("/fonts/NoticiaText-BoldItalic.ttf") format("truetype");
-    font-weight: bold;
-    font-style: italic;
 }

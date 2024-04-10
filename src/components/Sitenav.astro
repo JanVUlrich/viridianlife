@@ -1,15 +1,32 @@
 ---
 import type { PostMeta } from "../models/postmeta";
- 
-const allPosts = await Astro.glob<PostMeta>("../pages/posts/*.md");
-const recents = allPosts.sort((p1, p2) => new Date(p1.frontmatter.pubDate) > new Date(p2.frontmatter.pubDate) ? 1 : 0).slice(0, 5)
 
+const allPosts = await Astro.glob<PostMeta>("../pages/posts/*.md");
+const recents = allPosts
+  .sort((p1, p2) =>
+    new Date(p1.frontmatter.pubDate) < new Date(p2.frontmatter.pubDate) ? 1 : -1
+  )
+  .slice(0, 5);
 ---
+
 <nav>
-    <a class="site-nav__homelink" href="/">Go back to start</a>
-    <h2>Most recent posts</h2>
-    {recents.map(p => <a class="site-nav__item" href={p.url}>{p.frontmatter.title}</a>)}
-    <a class="site-nav__item" href="/about">About</a>
-    <a class="site-nav__item" href="/imprint">Imprint</a>
-    <a class="site-nav__item" href="/privacy">Privacy</a>
+  <a class="site-nav__homelink" href="/">Go back to start</a>
+  <h2 class="center c-accent w-fit">Most recent posts:</h2>
+  <menu class="site-nav-menu list-unstyled">
+    {
+      recents.map((p) => (
+        <li>
+          <a class="site-nav__item" href={p.url}>
+            {p.frontmatter.title}
+          </a>
+        </li>
+      ))
+    }
+  </menu>
+  <h2 class="center c-accent w-fit">More</h2>
+  <menu class="site-nav-menu list-unstyled">
+    <li><a class="site-nav__item" href="/about">About</a></li>
+    <li><a class="site-nav__item" href="/imprint">Imprint</a></li>
+    <li><a class="site-nav__item" href="/privacy">Privacy</a></li>
+  </menu>
 </nav>

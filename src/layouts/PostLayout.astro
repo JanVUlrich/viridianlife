@@ -16,12 +16,10 @@ const { frontmatter: { title, tags, pubDate, updatedAt, heroImage, description }
 		itemtype="http://schema.org/BlogPosting"
 	>
 		<header class="post-header">
-			{heroImage && (
 			<div
 				class="post-header-img center"
-				style={`background: transparent url('${heroImage}') no-repeat center; background-size: cover`}
+				style={heroImage && `background: transparent url('${heroImage}') no-repeat center; background-size: cover`}
 			/>
-			)}
 
 			<div class="post-header__meta">
 				{pubDate && <FormattedDate date={pubDate} />}
@@ -34,11 +32,9 @@ const { frontmatter: { title, tags, pubDate, updatedAt, heroImage, description }
 					}
 				&nbsp;/&nbsp;
 				<div class="post-meta">
+					Topics: 
 					{
-						tags &&
-							tags.map((tag) => (
-								<span class="">{tag}</span>
-							))
+						tags && tags.join(", ")
 					}
 				</div>
 			</div>
