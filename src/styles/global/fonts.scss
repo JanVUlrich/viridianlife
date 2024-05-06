@@ -10,6 +10,14 @@
 @font-face {
     font-family: "Plex Serif";
     src: local("Plex Serif"),
+        url("/fonts/IBMPlexSerif-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Plex Serif";
+    src: local("Plex Serif"),
         url("/fonts/IBMPlexSerif-Bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
