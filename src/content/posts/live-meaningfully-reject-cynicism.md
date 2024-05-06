@@ -1,7 +1,7 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: To live meaningfully, reject cynicism
 pubDate: 2024-01-04
+slug: live-meaningfully-reject-cynicism
 ---
 
 # Modern cynicism is a dark place

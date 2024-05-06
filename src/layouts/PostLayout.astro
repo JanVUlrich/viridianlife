@@ -1,11 +1,9 @@
 ---
 import FormattedDate from "../components/FormattedDate.astro";
-import type { PostMeta } from "../models/postmeta";
 import ContentLayout from "./ContentLayout.astro";
 
-interface Props extends PostMeta {}
 
-const { frontmatter: { title, tags, pubDate, updatedAt, heroImage, description } } = Astro.props;
+const { title, heroImage, pubDate, updatedAt, tags, description } = Astro.props;
 
 ---
 
@@ -15,7 +13,7 @@ const { frontmatter: { title, tags, pubDate, updatedAt, heroImage, description }
 		itemscope
 		itemtype="http://schema.org/BlogPosting"
 	>
-		<header class="post-header">
+		<header class="post-header">x
 			<div
 				class="post-header-img center"
 				style={heroImage && `background: transparent url('${heroImage}') no-repeat center; background-size: cover`}

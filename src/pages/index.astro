@@ -1,13 +1,20 @@
 ---
 import { SITE_TITLE } from "../consts";
 import IndexpageLayout from "../layouts/IndexpageLayout.astro";
+import { getCollection } from "astro:content";
 
-const allPosts = await Astro.glob("../pages/posts/*.md");
-const sorted = allPosts.sort((p1, p2) =>
-  new Date(p1.frontmatter.pubDate) < new Date(p2.frontmatter.pubDate) ? 1 : -1
+const allPosts = await getCollection("posts");
+
+const sorted = allPosts.filter(p => !p.data.draft).sort((p1, p2) =>
+  new Date(p1.data.pubDate) < new Date(p2.data.pubDate) ? 1 : -1
 );
+
 const featuredPost = sorted[0];
 const recents = sorted.slice(1, 10);
+
+console.log(featuredPost);
+
+
 ---
 
 <IndexpageLayout bodyclass={"layout-home"}>
@@ -33,15 +40,15 @@ const recents = sorted.slice(1, 10);
         <div class="featured-preview__text">
           <div class="featured-textcontent">
             <div class="post-date">
-              {featuredPost.frontmatter.pubDate}
+              {featuredPost.data.pubDate}
             </div>
             <h2 class="post-preview-headline">
-              {featuredPost.frontmatter.title}
+              {featuredPost.data.title}
             </h2>
             <div class="featured-textcontent__excerpt">
-              {featuredPost.frontmatter.description}
+              {featuredPost.data.description}
             </div>
-            <a class="post-continue-link" href={featuredPost.url}
+            <a class="post-continue-link" href={`/posts/${featuredPost.slug}`}
               >Continue reading</a
             >
           </div>
@@ -55,19 +62,20 @@ const recents = sorted.slice(1, 10);
       <section class="post-previews-list">
         {
           recents.map((post) => {
+            const { data } = post;
+            
             return (
               <article class="post-preview">
-                <div class="post-preview-image">
-                  {post.frontmatter.heroImage && post.frontmatter.heroImage}
+                <div class="post-preview-image" style={`background: url("${data.heroImage}") no-repeat center; background-size: cover;`}>
                 </div>
                 <div class="post-preview-text">
                   <div class="post-preview-date">
-                    {post.frontmatter.pubDate}
+                    {data.pubDate}
                   </div>
                   <h2 class="post-preview-headline">
-                    {post.frontmatter.title}
+                    {data.title}
                   </h2>
-                  <a class="post-continue-link" href={post.url}>
+                  <a class="post-continue-link" href={`/posts/${data.slug}`}>
                     Continue reading
                   </a>
                 </div>
@@ -179,8 +187,9 @@ const recents = sorted.slice(1, 10);
     }
   }
 
-  .post-list {
-    margin-left: 0;
-    list-style: none;
+  .post-previews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
   }
 </style>

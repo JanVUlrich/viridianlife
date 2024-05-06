@@ -1,8 +1,8 @@
 ---
-layout: "../../layouts/PostLayout.astro"
 title: "Nature is over. long live nature!"
 summary: "Nature is over"
 pubDate: 2024-01-05
+slug: nature-is-over-long-live-nature
 ---
 
 
