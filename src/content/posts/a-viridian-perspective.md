@@ -1,11 +1,12 @@
 ---
 title: "Inaugural post: A viridian perspective"
-author: BLOG_AUTHOR_NAME
-intro: "The self-inflicted challenges of humanity may seem too big so solve, let alone efficiently tackle. We're collectively lacking imagination, perseverance, consistency and the motivation. What to do?"
+description: "The self-inflicted challenges of humanity may seem too big so solve, let alone efficiently tackle. We're collectively lacking imagination, perseverance, consistency and the motivation. What to do?"
 heroImage: "/jpg/viridian-perspective.jpg"
 pubDate: 2024-01-01
 slug: "a-viridian-perspective"
 tags: [Sustainability, "General Thoughts"]
+draft: true
+hidden: false
 ---
 
 ## Can we go on like this?

@@ -1,7 +1,10 @@
 ---
 title: "How to eat in the modern world: an attempt at simplifying a needlessly complex topic"
-summary: "Eating used to be easy, now it is subject to myriads of opposing influences."
+description: "Eating used to be easy, now it is subject to myriads of opposing influences."
 pubDate: 2024-01-02
+draft: true
+hidden: false
+heroImage: "/jpg/"
 slug: how-to-eat-three-rules
 --- 
 

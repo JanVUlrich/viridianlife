@@ -14,10 +14,10 @@ const postSchema = z.object({
 	}).optional(),
 })
 
-const blog = defineCollection({
+const posts = defineCollection({
 	schema: postSchema
 });
 
-export const collections = { blog };
+export const collections = { posts };
 
 export type FrontMatter = z.infer<typeof postSchema>;

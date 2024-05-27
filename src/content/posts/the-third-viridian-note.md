@@ -1,11 +1,16 @@
 ---
 title: "The third viridian note: how this blog got its name"
+description: ""
+heroImage: "/jpg/"
 slug: the-third-viridian-note
+draft: true
+hidden: false
 pubDate: 2024-01-06
 ---
 
 # The third viridian note
 Bruce Sterling https://www.viridiandesign.org/notes/1-25/Note%2000003.txt 
+
 
 # How this publication got its name
 
@@ -24,7 +29,6 @@ Not stressing about your own impact on the planet too much, instead adopting an 
 „Planned evanescence“ is, i am afraid, as wise as it is still ahead of its time. With most things we humans purchase, build or straight out consume, not much thought is spared about what is left behind (Pacific garbage patch, anyone?) 
 
 Finally, just how these principles are holding up (or not) 10 years on is worth another look or two.
-
 
 
 # Further (highly recommended) reading

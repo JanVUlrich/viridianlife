@@ -1,8 +1,11 @@
 ---
 title: "Nature is over. long live nature!"
-summary: "Nature is over"
+description: "Nature is over"
 pubDate: 2024-01-05
+heroImage: "/jpg/"
 slug: nature-is-over-long-live-nature
+draft: true
+hidden: false
 ---
 
 

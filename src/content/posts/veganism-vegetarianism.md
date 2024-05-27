@@ -1,8 +1,11 @@
 ---
 title: Veganism is a distinctly modern phenomenon
 slug: veganism-is-a-modern-phenomenon
-summary: Eating used to be easy, now it is subject to myriads of opposing influences. We provide an alternative set of guidelines that aim to cut through the chaos.
+heroImage: "/jpg/"
+description: Eating used to be easy, now it is subject to myriads of opposing influences. We provide an alternative set of guidelines that aim to cut through the chaos.
 pubDate: 2024-01-07
+draft: true
+hidden: false
 ---
 
 ## Animal products played an essential part homo sapiens’ origin story

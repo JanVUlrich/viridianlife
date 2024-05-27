@@ -1,9 +1,11 @@
 ---
-title: The moral case for not eating wild animals and plants
+title: The sacredness of nature vs. the crushing reality of large numbers
 pubDate: 2024-01-03
 slug: the-moral-case-for-not-eating-wild-animals-and-plants
-intro: In an intact ecosystem, animals and plants exist in an equilibrium, keeping each other in check. Humans have irreparably upset this balance on panet earth. Moving food production into cities and laboratories to reduce land usage and animal suffering might be the only way forward.
-image: ' '
+description: In an intact ecosystem, animals and plants exist in an equilibrium, keeping each other in check. Humans have irreparably upset this balance on planet earth. Moving food production into cities and laboratories to reduce destructive land use and animal suffering might be the only way forward.
+heroImage: '/jpg/'
+draft: true
+hidden: false
 ---
 
 ## First up: why eat wild?
