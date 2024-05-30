@@ -2,7 +2,7 @@
 title: To live meaningfully, reject cynicism
 description: Cynicism is rejection and apathy disguised as wisdom.
 pubDate: 2024-01-04
-heroImage: "/jpg/"
+heroImage: "/jpg/reject-cynicism.jpg"
 slug: live-meaningfully-reject-cynicism
 draft: true
 hidden: false

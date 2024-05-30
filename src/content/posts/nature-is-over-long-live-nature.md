@@ -2,7 +2,7 @@
 title: "Nature is over. long live nature!"
 description: "Nature is over"
 pubDate: 2024-01-05
-heroImage: "/jpg/"
+heroImage: "/jpg/nature-is-over.jpg"
 slug: nature-is-over-long-live-nature
 draft: true
 hidden: false

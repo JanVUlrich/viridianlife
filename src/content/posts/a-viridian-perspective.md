@@ -1,7 +1,7 @@
 ---
 title: "Inaugural post: A viridian perspective"
-description: "The self-inflicted challenges of humanity may seem too big so solve, let alone efficiently tackle. We're collectively lacking imagination, perseverance, consistency and the motivation. What to do?"
-heroImage: "/jpg/viridian-perspective.jpg"
+description: "The self-inflicted challenges of humanity may seem too big to solve, let alone even beginning to tackle. Potential solutions abound and technological progress is moving ahead full steam, so what is missing?"
+heroImage: "/jpg/a-viridian-perspective.jpg"
 pubDate: 2024-01-01
 slug: "a-viridian-perspective"
 tags: [Sustainability, "General Thoughts"]
@@ -17,11 +17,11 @@ Despite all [studies](https://en.wikipedia.org/wiki/The_Limits_to_Growth), analy
 
 There are many individuals or NGOs that are trying to stem the tide and push for changes to reverse some of the most dire trends, but any good news is drowned out by the noise of bad news (or sociel media white noise). It is quite easy nowadays to fall into a state of resignation or apathy. And why wouldn’t we? The problems are countless and truly daunting in their scope. Time and time again, any momentum for change falters and peters out when systemic pressures and inertia („the status quo“) pose too much resistance to change. All the while existing issues become more urgent and increase in scope.
 
-Some adopt a vegetarian or vegan lifestyle, others opt for hybrid or fully electric cars. Most still continue in their ways  though, isn’t global ecosystems decay something we elected our politicians to deal with? We’re pretty wrapped up in our own lives and daily routines to really be able to devote significant energy to contribute or – heaven forbid – start a political movement ourselves. Those who commit fully often do so at significant financial cost or even by risking to [pay](https://taz.de/RWE-klagt-auf-Schadensersatz/!5571106/) the [ultimate](https://www.theguardian.com/environment/2019/aug/05/environmental-activist-murders-double) [price](https://phys.org/news/2018-07-wildlife-rangers-died-duty-year.html).
+Some adopt a vegetarian or vegan lifestyle, others opt for hybrid or fully electric cars. Most still continue in their ways though – after all, isn’t global ecosystems decay something we elected our politicians to deal with? Most of humanity is in the tight grip of daily routines and necessities of life to really be able to devote significant energy to contribute or – heaven forbid – start a politicalor environmental movement. Those who commit fully often do so at significant financial cost or even by risking to [pay](https://taz.de/RWE-klagt-auf-Schadensersatz/!5571106/) the [ultimate](https://www.theguardian.com/environment/2019/aug/05/environmental-activist-murders-double) [price](https://phys.org/news/2018-07-wildlife-rangers-died-duty-year.html).
 
 ## A rather vexing problem
 
-If human society as a whole wants to not only just survive, but [thrive](https://www.who.int/topics/millennium_development_goals/about/en/) as a whole, profound and, when viewed from our current perspective, radical changes are necessary. This has been true for as long as we knew where our current trajectory will lead us, but [not much](https://scripps.ucsd.edu/programs/keelingcurve/wp-content/plugins/sio-bluemoon/graphs/mlo_full_record.png) has happened so far.
+If human society as a whole wants to not only just survive, but [thrive](https://www.who.int/topics/millennium_development_goals/about/en/), profound and, when viewed from our current perspective, radical changes are necessary. This has been true for as long as we knew where our current trajectory will lead us, but [not much](https://bluemoon.ucsd.edu/co2_400/co2_800k_zoom.pdf) has happened so far.
 
 Citizens in most westernized countries (especially those in the northern hemisphere, of which the author is part of), are far removed from the consequences of their choices. Most products, tools and foods that are being consumed today are the result of a complex, opaque, global flow of goods. Most aspects of the daily lives of citizens in developed nations could not exist in their current form without globalized trade and human relations. Take for example the laptop computer this text has been written and put on the internet with: Aluminium from Australia, rare earth minerals from the Congo, plastics from chemical plants in China, all transformed into individual components in different regions in south-east Asia and finally assembled and packaged in a massive plant somewhere on the southern coast of China. All the individual parts in an electronic device might have more miles of travel in it than you could possibly stack up in your lifetime.
 
@@ -54,6 +54,11 @@ Lasting changes in human societies can not be forced, lest the act of forcing pr
 
 [INSERT TIPPING POINTS IN SOCIETY – first slow, then fast - hockey stick]
 
- Humans are generally able to act one way and think another way, and maintain this cognitive dissonance for quite some time! But the tensions that inevitable emerge from this disharmonious state will make itself known soon enough, and sometimes unpleasantly so.  
+Humans are generally able to act one way and think another way, and maintain this cognitive dissonance for quite some time! But the tensions that inevitable emerge from this disharmonious state will make itself known soon enough, and sometimes unpleasantly so.  
 
-Therefore the question is how not only how to live a _sustainable_ life, but to do so _sustainably_ in the long term.   The inner, personal world and the outer, living world are inevitably connected.
+Therefore the question is how not only how to live a _sustainable_ life, but to do so _sustainably_ in the long term. The inner, personal world and the outer, living world are inevitably connected.
+
+## Is a vision all we really need?
+
+* Solarpunk
+* In a world of dystopian visions, we need aspirational stories, boundless imaginations and courage

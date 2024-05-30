@@ -13,13 +13,13 @@ const { title, heroImage, pubDate, updatedAt, tags, description } = Astro.props;
 		itemscope
 		itemtype="http://schema.org/BlogPosting"
 	>
-		<header class="post-header">x
+		<header class="post-header">
 			<div
 				class="post-header-img center"
 				style={heroImage && `background: transparent url('${heroImage}') no-repeat center; background-size: cover`}
 			/>
 
-			<div class="post-header__meta">
+			<div class="d-flex flex-wrap">
 				{pubDate && <FormattedDate date={pubDate} />}
 				{ 
 					updatedAt && (

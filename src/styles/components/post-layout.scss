@@ -61,12 +61,9 @@
 
 .post-date {
   flex: none;
-  min-width: 120px;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   font-family: v.$heading-font-family;
   color: v.$color-grey-middle;
-  margin-right: 2rem;
-  padding-top: 0.2rem;
 }
 
 .post-meta {
@@ -93,11 +90,6 @@
 
   @media (mimn-width: v.$breakpoint-small) {
     margin-bottom: 3rem;
-  }
-
-  &__meta {
-    display: flex;
-    width: 100%;
   }
 
   &__intro {
@@ -176,11 +168,11 @@
   line-height: 1.2;
 }
 
-
 .post-content,
 .page-content {
   margin: 0 auto;
   max-width: 65ch;
+  padding-bottom: 5rem;
 
   h2 {
     font-size: 2rem;
