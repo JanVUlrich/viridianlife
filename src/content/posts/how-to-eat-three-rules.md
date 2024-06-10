@@ -2,7 +2,7 @@
 title: "How to eat in the modern world: an attempt at simplifying a needlessly complex topic"
 description: "Eating used to be easy, now it is subject to myriads of opposing influences."
 pubDate: 2024-01-02
-heroImage: "/jpg/eating-in-the-modern-world.jpg"
+heroImage: "/jpg/eating-in-the-modern-world-2.jpg"
 slug: how-to-eat-three-rules
 draft: true
 hidden: false

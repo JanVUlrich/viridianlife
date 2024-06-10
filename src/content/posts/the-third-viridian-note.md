@@ -1,7 +1,7 @@
 ---
 title: "The third viridian note: how this blog got its name"
 description: ""
-heroImage: "/jpg/"
+heroImage: "/jpg/the-third-viridian-note.jpg"
 slug: the-third-viridian-note
 draft: true
 hidden: false

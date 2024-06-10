@@ -1,30 +1,18 @@
 ---
 title: Veganism is a distinctly modern phenomenon
 slug: veganism-is-a-modern-phenomenon
-heroImage: "/jpg/"
+heroImage: "/jpg/separation-creates-concerns.jpg"
 description: Eating used to be easy, now it is subject to myriads of opposing influences. We provide an alternative set of guidelines that aim to cut through the chaos.
 pubDate: 2024-01-07
 draft: true
 hidden: false
 ---
 
-## Animal products played an essential part homo sapiens’ origin story
-
-The inclusion of meat, bone marrow and offal („nasty bits“) in the diet of our ancestors, the nutritional value of which only came into full effect with with the taming and controlled use of fire was a watershed moment in human evolutionary history. Suddenly, essential nutrients and precious energy became available, freeing up time for toolmaking, social activities and allowing for the growth of our exceptionally large brains over many generations. 
-
-This adaptation is of course reflected in the essential dietary requirements of a modern human: we require specific types of Omega-3 fats , Vitamin B12, iron and other trace elements that are abundant in animal matter, but can’t be wrestled from plant matter in adequate amounts without prior preparation or processing.
-
-That being said, the addition of animal parts to our diets allowed us adopt intensely varied nutritional patterns and as a result thrive in a multitude of climates and environments. Take for example the pastoral Massai, who are known to subsist on copious amounts of dairy and bovine blood; contrast this lifestyle with the mostly starch-based fare of the tropical Kitavans, who are nonetheless more than happy to enjoy the spoils of a successful hunt. And let’s not forget the northern tribes that once roamed the northern polar regions between Canada and Greenland, who were (some still are) quite happy to subsist on seal blubber, blood and dried fish during the darker parts of the year. For the human omnivore, the menu was always as varied and colorful as the local flora and fauna could provide. Seasonality, cunning or just pure luck were at times the only determining factor in the composition of our ancestral menu: if animal-based foods were available, they were readily consumed. Conversely, until modern times there were no known purely vegan cultures or tribes on this planet.
-
-There are many good and valid reasons for becoming a vegetarian, and fewer (but nontheless valid) reasons adopt a fully vegan lifestyle. Usually, these can be associated with one of these three categories: the concern for the environmental impact of the production of animal-based foodstuffs, a moral case for the abolishment of cruelty inflicted by humans, or religious prescriptions. And for some, meat, eggs and milk simply might just not be that appealing or downright disgusting.
-
-It goes without saying though, that in the context of this publication i am focusing on the physiological and environmental relationships between humans and their surrounding flora and fauna – the multitude of abhorrent ways humans are capable of inflicting cruelty on animals are known, but out of the scope of this blog. Rest assured, i am more strongly disapproving of most human uses of animals and the egregious lack of respect and consideration for the sacredness of life.
-
-## The role of modern technology and science
+## Separation creates new concerns 
 
 Vegetarianism is not unheard of or uncommon in human history, and is practiced due to religious prescriptions, or rituals, or just out of necessity (for example, when an oxen was needed for work, its slaughter would’ve inevitably meant that the nearby field could not be tilled in preparation for the next rotation of crops). These, except in case of religious prescriptions, would never be permanent lifestyles. If animal products could be procured again, or if they were allowed again, they went right back on the menu.
 
-What is uncommon in human history though is that nowadays it is entirely possible to be overweight and still nutrient-deficient. If it’s calories you’re after, industrial agriculture has you covered. You could live off of pizza „quattro formaggi“ exclusively – four types of cheese will easily cover your protein and caloric needs – but what life would that be? 
+What had been unheard of in human history though is that nowadays it is entirely possible to morbidly obese and still nutrient-deficient. If it’s calories you’re after, industrial agriculture and the subsequent has you covered.
 
 * Instead of just living off the land, we have to make deliberate choices about what to eat and often deliberately limit the amounts, too (homo sapiens is the first and only species on this planet, as far as we know, to make an effort to count calories)
 
@@ -43,11 +31,25 @@ Procuring all essential nutrients, moreso in their most bioavailable forms, will
 * It is a fact that the deliberate detachment from our evolutionary past requires detachment from most natural processes as well
 
 * is a departure from human nature and evolutionary history
+
 This is not to say that this is bad or inadequate – it is just stating the fact that essentially, veganism 
 
 
 Sidebar: It is the careful monitoring of nutrients (micro and macro), employed by the majority of the vegetarian/vegan crowd that skews most statistics and studys about the health status of the general population and its constituent cohorts. Simply because vegetarians/vegans need to more carefully manage their diet, they tend to live more healthy lifestyles overall. And conversely, those who demonstrate a higher than average concern for maintaining a healthy lifestyle,  are more likely to adopt a vegan or vegetarian diet. 
 If corrected for smoking / drinking and substance abuse though, most of the differences in health outcomes tend to disappear.
+
+
+## Animal products played an essential part homo sapiens’ origin story
+
+The inclusion of meat, bone marrow and offal („nasty bits“) in the diet of our ancestors, the nutritional value of which only came into full effect with with the taming and controlled use of fire was a watershed moment in human evolutionary history. Suddenly, essential nutrients and precious energy became available, freeing up time for toolmaking, social activities and allowing for the growth of our exceptionally large brains over many generations. 
+
+This adaptation is of course reflected in the essential dietary requirements of a modern human: we require specific types of Omega-3 fats , Vitamin B12, iron and other trace elements that are abundant in animal matter, but can’t be wrestled from plant matter in adequate amounts without prior preparation or processing.
+
+That being said, the addition of animal parts to our diets allowed us adopt intensely varied nutritional patterns and as a result thrive in a multitude of climates and environments. Take for example the pastoral Massai, who are known to subsist on copious amounts of dairy and bovine blood; contrast this lifestyle with the mostly starch-based fare of the tropical Kitavans, who are nonetheless more than happy to enjoy the spoils of a successful hunt. And let’s not forget the northern tribes that once roamed the northern polar regions between Canada and Greenland, who were (some still are) quite happy to subsist on seal blubber, blood and dried fish during the long cold seasons. For the human omnivore, the menu was always as varied and colorful as the local flora and fauna could provide. Seasonality, cunning or just pure luck were at times the only determining factor in the composition of our ancestral menu: when animals were abundant, they were readily huntend and consumed. When plants offered a rich bounty of fruit and seeds, they were consumed as well. 
+
+It was only when humanity removed itself from the natural food web that it became possible to adpot a purely vegan lifestyle. 
+
+There are many good and valid reasons for becoming a vegetarian, and fewer (but nontheless valid) reasons adopt a fully vegan lifestyle. Usually, these can be associated with one of these three categories: the concern for the environmental impact of the production of animal-based foodstuffs, a moral case for the abolishment of cruelty inflicted by humans, or religious prescriptions. And for some, meat, eggs and milk simply might just not be that appealing or downright disgusting.
 
 
 ## Factory-farmed meat is just as unnatural as soy protein based sausages
