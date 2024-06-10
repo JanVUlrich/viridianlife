@@ -3,10 +3,6 @@ import { getCollection } from "astro:content";
 
 const allPosts = await getCollection("posts");
 
-const sorted = allPosts.sort((p1, p2) =>
-  new Date(p1.data.pubDate) < new Date(p2.data.pubDate) ? 1 : -1
-);
-
 const recents = allPosts
   .sort((p1, p2) =>
     new Date(p1.data.pubDate) < new Date(p2.data.pubDate) ? 1 : -1
@@ -15,23 +11,29 @@ const recents = allPosts
 ---
 
 <nav>
-  <a class="site-nav__homelink" href="/">Go back to start</a>
-  <h2 class="center c-accent w-fit">Most recent posts:</h2>
-  <menu class="site-nav-menu list-unstyled">
-    {
-      recents.map((p) => (
-        <li>
-          <a class="site-nav__item" href={p.data.url}>
-            {p.data.title}
-          </a>
-        </li>
-      ))
-    }
-  </menu>
-  <h2 class="center c-accent w-fit">More</h2>
-  <menu class="site-nav-menu list-unstyled">
-    <li><a class="site-nav__item" href="/about">About</a></li>
-    <li><a class="site-nav__item" href="/imprint">Imprint</a></li>
-    <li><a class="site-nav__item" href="/privacy">Privacy</a></li>
-  </menu>
+  <div class="t-center">
+    <a class="" href="/">Go back to start</a>
+  </div>
+  <div>
+    <h2 class="center c-accent w-fit">Most recent posts</h2>
+    <menu class="site-nav-menu list-unstyled">
+      {
+        recents.map((p) => (
+          <li>
+            <a class="site-nav__item" href={p.slug}>
+              {p.data.title}
+            </a>
+          </li>
+        ))
+      }
+    </menu>
+  </div>
+  <div>
+    <h2 class="center c-accent w-fit">More</h2>
+    <menu class="site-nav-menu list-unstyled">
+      <li><a class="site-nav__item" href="/about">About</a></li>
+      <li><a class="site-nav__item" href="/imprint">Imprint</a></li>
+      <li><a class="site-nav__item" href="/privacy">Privacy</a></li>
+    </menu>
+  </div>
 </nav>

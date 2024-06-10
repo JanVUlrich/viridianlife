@@ -1,66 +1,69 @@
 @use '../config/' as v;
 
-.featured-preview {
+.featured {
   margin-bottom: v.$spacing-unit * 6;
+}
 
-  &__img {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 20rem;
-    background-color: #888;
-  }
+.featured-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: clamp(24rem, 50vw, 36rem);
+  background-color: #888;
 
-  &__text {
-    flex: none;
-    text-align: center;
+  @media (max-width: 639px) {
+    margin: 0 -2rem;
   }
 }
 
-  .post-preview {
-    margin-bottom: 8rem;
+.featured-text {
+  text-align: center;
+}
+
+.featured-pubdate {}
+
+.post-preview {
+  margin-bottom: 8rem;
+}
+
+.post-preview-pubdate {
+  text-align: center;
+  font-style: italic;
+}
+
+.post-preview-image {
+  background-color: #888;
+  margin: 0 auto;
+  border-radius: .2rem;
+  height: clamp(24rem, 50vw, 36rem);
+  margin-bottom: 2rem;
+}
+
+.post-preview-headline {
+  color: var(--vl-accent);
+  font-family: v.$heading-font-family;
+  font-weight: bold;
+  line-height: 1.25;
+  margin-top: 0;
+  font-size: 2.4rem;
+  margin-bottom: v.$spacing-unit * 2;
+  text-align: center;
+
+  @media (min-width: v.$breakpoint-medium) {
+    font-size: 3.2rem;
+    margin-bottom: v.$spacing-unit * 3;
   }
 
-  .post-preview-pubdate {
-    text-align: center;
-    font-style: italic;
+  >a {
+    color: inherit;
+    text-decoration: none;
   }
+}
 
-  .post-preview-image {
-    background-color: #888;
-    margin: 0 auto;
-    border-radius: .2rem;
-    width: 80%;
-    max-width: 500px;
-    height: 25rem;
-    margin-bottom: 2rem;
-  }
-  
-  .post-preview-headline {
-    color: var(--vl-accent);
-    font-family: v.$heading-font-family;
-    font-weight: bold;
-    line-height: 1.25;
-    margin-top: 0;
-    font-size: 2.4rem;
-    margin-bottom: v.$spacing-unit * 2;
-    text-align: center;
-    
-    @media (min-width: v.$breakpoint-medium) {
-      font-size: 3.2rem;
-      margin-bottom: v.$spacing-unit * 3;
-    }
+.post-preview-text {
+  text-align: center;
+}
 
-    > a {
-      color: inherit;
-      text-decoration: none;
-    }
-  }
-
-  .post-preview-text {
-    text-align: center;
-  }
-
-  .post-continue-link {
-    text-align: center;
-  }
+.post-continue-link {
+  text-align: center;
+}

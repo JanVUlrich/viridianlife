@@ -7,6 +7,7 @@ const postSchema = z.object({
 	pubDate: z.coerce.date(),
 	updatedDate: z.coerce.date().optional(),
 	heroImage: z.string(),
+	heroImageCredits: z.string().optional(),
 	draft: z.boolean(),
 	hidden: z.boolean(),
 	tags: z.array(z.string()).refine(items => new Set(items).size === items.length, {

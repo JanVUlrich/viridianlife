@@ -10,8 +10,6 @@
   left: 0;
   right: 0;
   position: fixed;
-  display: flex;
-  align-items: center;
   width: 100%;
   z-index: 9000;
   transition: background-color .25s;
@@ -22,7 +20,7 @@
   }
 
   &__contents {
-    padding-top: 10px;
+    padding-top: 1.2rem;
   }
 
   &--index {

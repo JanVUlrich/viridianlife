@@ -18,7 +18,8 @@ body {
   font-kerning: normal;
   background-color: var(--vl-bg-primary);
   padding-top: v.$header-height-small;
-
+  transition: color .75s, background .75s;
+  
   @media (min-width: v.$breakpoint-small) {
     padding-top: v.$header-height-large;
   }

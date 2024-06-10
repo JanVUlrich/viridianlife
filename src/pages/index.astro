@@ -3,6 +3,7 @@ import { SITE_TITLE } from "../consts";
 import IndexpageLayout from "../layouts/IndexpageLayout.astro";
 import { getCollection } from "astro:content";
 import FormattedDate from "../components/FormattedDate.astro";
+import Image from "astro/components/Image.astro";
 
 const allPosts = await getCollection("posts");
 
@@ -32,13 +33,12 @@ const recents = sorted.slice(1, 15);
       <div class="section-divider">
         <span>Latest</span>
       </div>
-      <article class="featured-preview">
-        <div class="featured-preview__img" style=`background-image: url("${featuredPost.data.heroImage}")`>
+      <article class="featured">
+        <div class="featured-img" style=`background-image: url("${featuredPost.data.heroImage}")`>
         </div>
 
-        <div class="featured-preview__text">
-          <div class="featured-textcontent">
-            <div class="post-date">
+        <div class="featured-text">
+            <div class="featured-pubdate">
               <FormattedDate date={featuredPost.data.pubDate}/>
             </div>
             <h2 class="post-preview-headline">
@@ -50,7 +50,6 @@ const recents = sorted.slice(1, 15);
             <a class="post-continue-link" href={`/posts/${featuredPost.slug}`}
               >Continue reading</a
             >
-          </div>
         </div>
       </article>
 

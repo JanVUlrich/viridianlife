@@ -8,21 +8,18 @@
 .site-nav-close {
   display: block;
   height: 50px;
-  width: 100px;
   border: none;
   background: transparent;
   user-select: none;
   cursor: pointer;
   position: absolute;
   z-index: 1000;
-  right: 15px;
+  right: 1.6rem;
   top: 0;
   font-size: 1.5rem;
   text-align: right;
   line-height: 48px;
   color: var(--vl-accent);
-  text-transform: uppercase;
-  letter-spacing: .15em;
   font-family: v.$heading-font-family;
   font-weight: bold;
 

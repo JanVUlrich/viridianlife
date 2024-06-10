@@ -43,9 +43,31 @@
   @include list-unstyled;
 }
 
-.c-accent  {
-  color: var(--vl-accent);
-}
+.c {
+  &-accent  {
+    color: var(--vl-accent);
+  }
+} 
+
 .w-fit {
   width: fit-content;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.flex {
+  &-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.d {
+  &-flex {
+    display: flex;
+  }
+  &-block {
+    display: block;
+  }
 }

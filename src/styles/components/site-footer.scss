@@ -24,35 +24,31 @@
 }
 
 .colophon {
-
-  &__wrap {
-    text-align: center;
-
-    .dash {
-      display: inline-block;
-      padding: 0 14px;
-      color: #7D8A8A;
-
-      @media (max-width: v.$breakpoint-small-max) {
-        display: none;
-      }
-    }
-  }
+  text-align: center;
 
   &__title {
     color: var(--vl-accent);
-    text-decoration: none;
     font-weight: bold;
     font-family: v.$heading-font-family;
     font-size: 2.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
 
   &__link {
     @media (max-width: v.$breakpoint-small-max) {
       display: block;
       text-align: center;
-      margin-bottom: 15px;
+    }
+  }
+
+  .dash {
+    display: inline-block;
+    padding: 0 1rem;
+    color: var(--vl-accent);
+    font-size: 1.2rem;
+
+    @media (max-width: v.$breakpoint-small-max) {
+      display: none;
     }
   }
 }
